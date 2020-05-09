@@ -1,0 +1,19 @@
+body{
+    position: relative;
+}
+.cor-fundo{
+    background-color: #FAFAFA;
+}
+.cor-nav{
+    background-color: white;
+}
+.imagem-post{
+    object-fit: cover;
+}
+.fonte-rodape{
+    font-size: 13px;
+}
+.fonte-perfil{
+    font-size: 14px;
+}
+
