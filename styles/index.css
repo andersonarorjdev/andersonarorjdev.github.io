@@ -1,0 +1,18 @@
+.fundo-navbar{
+    background-color: #1a1d20;
+}
+.fundo-rodape{
+    background-color: #1a1d20;   
+}
+.video{
+    filter: brightness(30%);
+}
+.letreiro{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: #FFF;
+    font-weight: 1000;
+    position: relative;
+    margin-top: -380px;
+    margin-left:55px;
+}
