@@ -1,6 +1,4 @@
-.fundo-navbar{
-    background-color: #1a1d20;
-}
+
 .fundo-rodape{
     background-color: #1a1d20;   
 }
@@ -15,4 +13,14 @@
     position: relative;
     margin-top: -290px;
     margin-left:55px;
+}
+.fundo-navbar {
+background-color:#1a1d20 !important;
+   
+    
+}
+.fundo-navbar.alt-color {
+background-color: transparent !important;
+-webkit-transition: all .3s;
+transition: all .3s;
 }

@@ -25,7 +25,21 @@
 <link rel="stylesheet" href="../styles/fontes.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark fundo-navbar">
+    <script>
+        jQuery(document).ready(function($) {
+  $(window).scroll(function() {
+    var scrollPos = $(window).scrollTop(),
+        navbar = $('.fundo-navbar');
+
+    if (scrollPos < 100) {
+      navbar.addClass('alt-color');
+    } else {
+      navbar.removeClass('alt-color');
+    }
+  });
+});
+    </script>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark fundo-navbar">
         <a class="navbar-brand ml- pr-3" href="#"><img class="ml-3" src="./imagens/logo.png" height="45px" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
