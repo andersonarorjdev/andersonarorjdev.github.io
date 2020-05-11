@@ -1,6 +1,7 @@
 .fontes-navbar{
-    font-size: 16px;
-    font-family:'Courier New', Courier, monospace
+    font-size: 14px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 800;
 }
 .texto-modal{
     font-size: 20px;
