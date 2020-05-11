@@ -1,7 +1,11 @@
-.fontes-navbar{
+@font-face{
+    font-family: dinpro;
+    src: url('../dinpro-medium.otf');
+}
+.fonte-navbar{
+    font-family: dinpro;
     font-size: 14px;
-    font-family:'Courier New', Courier, monospace;
-    font-weight: 800;
+    font-weight: 1000;
 }
 .texto-modal{
     font-size: 20px;

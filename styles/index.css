@@ -6,10 +6,10 @@
     filter: brightness(30%);
 }
 .letreiro{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
+    font-family:dinpro;
+    font-size: 60px;
     color: #FFF;
-    font-weight: 1000;
+    font-weight: 700;
     position: relative;
     margin-top: -290px;
     margin-left:55px;
