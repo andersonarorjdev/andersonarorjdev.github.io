@@ -58,6 +58,10 @@ width: 30vw;
      padding-left: 20px;
  }
 
+ input:focus{
+     outline: none;
+ }
+
 
 
  #Pesquisa{
@@ -156,3 +160,350 @@ h6{
     width: 35vh;
     height: 40px;
 }
+
+
+
+/*Celulares muito pequenos*/
+@media (max-width: 575.98px){
+
+    #Pesquisa{
+        width: 90vw;
+    }
+
+    #Endereco{
+        width: 75vw;
+    }
+
+    #Bairro{
+        width: 72vw;
+    }
+
+    #Cidade{
+        width: 71vw;
+    }
+
+    #UF{
+        width: 77vw;
+    }
+
+    #Complemento{
+        width: 72vw;
+    }
+
+    #DD{
+        width:77vw;
+    }
+
+    #PesquisarButton{
+        width:80vw;
+    }
+
+    #LimparCamposButton{
+        width: 70vw;
+    }
+
+    #TextoSobre{
+        font-size: 18px;
+    }
+
+    #QuadroSobreBorda{
+        width: 92vw;
+        justify-content: center;
+        display: flex;
+    }
+
+    #QuadroSobre{
+        font-size: 20px;
+    }
+
+    #Report-1{
+        font-size: 16px;
+        font-weight: bolder;
+    }
+
+    #Report-2{
+        font-size:15px;
+    }
+
+    #Quadro-Contatos{
+      width: 100vw;
+    }
+
+    #Topo{
+        margin-left:150px ;
+        width: 100vw;
+        text-decoration: none;
+        padding: 2px;
+        background-color: green;
+        color: white;
+        margin-bottom: 20px;
+        border: 2px solid white;
+        font-weight: bolder;
+    }
+
+    #Topo:hover{
+        background-color: white;
+        border: 2px solid green;
+        color: green;
+    }
+}
+
+/*Celulares médios*/
+@media (min-width: 575.99px) and (max-width: 767.98px){
+
+    #Pesquisa{
+        width: 90vw;
+    }
+
+    #Endereco{
+        width: 80vw;
+    }
+
+    #Bairro{
+        width: 78vw;
+    }
+
+    #Cidade{
+        width: 76vw;
+    }
+
+    #UF{
+        width: 81vw;
+    }
+
+    #Complemento{
+        width: 77vw;
+    }
+
+    #DD{
+        width:80vw;
+    }
+
+    #PesquisarButton{
+        width:80vw;
+    }
+
+    #LimparCamposButton{
+        width: 70vw;
+    }
+
+    #TextoSobre{
+        font-size: 23px;
+    }
+
+    #QuadroSobreBorda{
+        width:450px;
+        justify-content: center;
+        display: flex;
+    }
+
+    #QuadroSobre{
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right:10px;
+    }
+
+    #Report-1{
+        font-size: 21px;
+        font-weight: bolder;
+    }
+
+    #Report-2{
+        font-size:17px;
+    }
+
+    #Quadro-Contatos{
+      width: 80vw;
+    }
+
+    #Topo{
+        margin-left:120px ;
+        width: 100vw;
+        text-decoration: none;
+        padding: 2px;
+        background-color: green;
+        color: white;
+        margin-bottom: 20px;
+        border: 2px solid white;
+        font-weight: bolder;
+    }
+
+    #Topo:hover{
+        background-color: white;
+        border: 2px solid green;
+        color: green;
+    }
+}
+
+
+/*Celulares grandes, tablets e monitores*/
+@media (min-width:767.99px) and (max-width: 991.98px) {
+
+    #Pesquisa{
+        width: 80vw;
+    }
+
+    #Endereco{
+        width: 83vw;
+    }
+
+    #Bairro{
+        width: 83vw;
+    }
+
+    #Cidade{
+        width: 81vw;
+    }
+
+    #UF{
+        width: 85vw;
+    }
+
+    #Complemento{
+        width: 82vw;
+    }
+
+    #DD{
+        width:85vw;
+    }
+
+    #PesquisarButton{
+        width:80vw;
+    }
+
+    #LimparCamposButton{
+        width: 70vw;
+    }
+
+    #TextoSobre{
+        font-size: 30px;
+    }
+
+    #QuadroSobreBorda{
+        width: 75vw;
+        justify-content: center;
+        display: flex;
+    }
+
+    #QuadroSobre{
+        font-size: 20px;
+    }
+
+    #Report-1{
+        font-size: 24px;
+        font-weight: bolder;
+    }
+
+    #Report-2{
+        font-size:20px;
+    }
+
+    #Quadro-Contatos{
+      width: 80vw;
+    }
+
+    #Topo{
+        margin-left:150px ;
+        width: 100vw;
+        text-decoration: none;
+        padding: 2px;
+        background-color: green;
+        color: white;
+        margin-bottom: 20px;
+        border: 2px solid white;
+        font-weight: bolder;
+    }
+
+    #Topo:hover{
+        background-color: white;
+        border: 2px solid green;
+        color: green;
+    }
+ }
+
+
+ /*Dispositivos grandes*/
+ @media (min-width:991.99px) and (max-width: 5000px) {
+
+    #Pesquisa{
+        width: 80vw;
+    }
+
+    #Endereco{
+        width: 80vw;
+    }
+
+    #Bairro{
+        width: 80vw;
+    }
+
+    #Cidade{
+        width: 80vw;
+    }
+
+    #UF{
+        width: 80vw;
+    }
+
+    #Complemento{
+        width: 80vw;
+    }
+
+    #DD{
+        width:80vw;
+    }
+
+    #PesquisarButton{
+        width:60vw;
+    }
+
+    #LimparCamposButton{
+        width: 50vw;
+    }
+
+    #TextoSobre{
+        font-size: 42px;
+    }
+
+    #QuadroSobreBorda{
+        width: 70vw;
+        justify-content: center;
+        display: flex;
+    }
+
+    #QuadroSobre{
+        font-size: 20px;
+    }
+
+    #Report-1{
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    #Report-2{
+        font-size:20px;
+    }
+
+    #Quadro-Contatos{
+      width: 70vw;
+    }
+
+    #Topo{
+        margin-left:80px ;
+        width: 100vw;
+        text-decoration: none;
+        padding: 2px;
+        background-color: green;
+        color: white;
+        margin-bottom: 20px;
+        border: 2px solid white;
+        font-weight: bolder;
+    }
+
+    #Topo:hover{
+        background-color: white;
+        border: 2px solid green;
+        color: green;
+    }
+
+  }

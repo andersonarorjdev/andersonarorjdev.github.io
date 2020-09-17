@@ -1,5 +1,6 @@
 <html lang="pt-br">
 	<head>
+		<a name="top" id="top"></a>
 		<meta charset="utf-8">
 		<link rel="shortcut icon" href="./images/iconeaba.jpg" >
 		<title>Get-Easy-My-Adress</title>
@@ -50,7 +51,7 @@
 				<img class="copiar" onclick="RecuperaUf()" src="./images/copy.gif" alt="">
 			</div>
 			<div class="row my-2 d-flex justify-content-center">
-				<h6 class="pt-3 ml-2 mr-2">Complemento:</h6>
+				<h6 class="pt-3 ml-2 mr-2">Comp:</h6>
 				<input class="apresenta" type="text" id="Complemento" readonly />
 				<img class="copiar" onclick="RecuperaComplemento()" src="./images/copy.gif" alt="">
 			</div>
@@ -60,7 +61,7 @@
 				<img class="copiar" onclick="RecuperaDD()" src="./images/copy.gif" alt="">
 			</div>
 			<div class="row d-flex justify-content-center">
-				<button id="PesquisarButton" onclick="getDadosEnderecoPorCep(Pesquisa.value)">Pesquisar</button>	
+				<button id="PesquisarButton" onclick="getDadosEnderecoPorCep(Pesquisa.value)">Pesquisar</button>
 			</div>
 			<div class="row mt-2  pb-5 d-flex justify-content-center">
 				<button id="LimparCamposButton" onclick="LimpaCampos()">Limpar pesquisa</button>
@@ -68,25 +69,26 @@
 		</div>
 
 		<div class="container-fluid" id="Sobre">
-			<div class="row py-5" >
-				<div class="col-2"></div>
+			<div class="row" >
+				<div class="col-sm-2 col-md-2 col-0"></div>
 				<div class="col-8">
-					<h1 class="TextoSobre my-5">Sobre o Get Easy My Adress...</h1>
-					<p id="QuadroSobre">
-						Essa ferramenta foi desenvolvida com o intuito de ajudar naqueles momentos
-						em que você não sabe o endereço completo, ou não tem certeza sobre qualquer dado
-						de determinada região e mesmo pesquisando em vários sites você não consegue ter 
-						certeza sobre a informação que está encontrando. <br><br>
-						<strong>Foi pensando nisso que eu desenvolvi essa ferramenta!</strong><br><br>
-						A idéia de ser algo rápido, prático e de fácil acesso é o motivo pelo qual
-						a nossa sociedade tem se tornado cada vez mais tecnológica.
-						Adicione essa ferramenta as suas abas de favoritos e nunca mais fique sem saber sobre os
-						dados de determinado local. <br>
-						<strong>USE COM SABEDORIA! KKKKK.</strong>
-					</p>
-
-					<h3 class="TextoSobre report-Bug">Caso encontre algum bug...ficarei feliz em receber seu report:</h3>
-					<h5 class="report-Bug">Formas de contato:</h5>
+					<h1 class="TextoSobre my-5" id="TextoSobre">Sobre o Get Easy My Adress...</h1>
+					<div id="QuadroSobreBorda">
+						<p id="QuadroSobre">
+							Essa ferramenta foi desenvolvida com o intuito de ajudar naqueles momentos
+							em que você não sabe o endereço completo, ou não tem certeza sobre qualquer dado
+							de determinada região e mesmo pesquisando em vários sites você não consegue ter 
+							certeza sobre a informação que está encontrando. <br><br>
+							<strong>Foi pensando nisso que eu desenvolvi essa ferramenta!</strong><br><br>
+							A idéia de ser algo rápido, prático e de fácil acesso é o motivo pelo qual
+							a nossa sociedade tem se tornado cada vez mais tecnológica.
+							Adicione essa ferramenta as suas abas de favoritos e nunca mais fique sem saber sobre os
+							dados de determinado local. <br>
+							<strong>USE COM SABEDORIA! KKKKK.</strong>
+						</p>
+					</div>
+					<h4 id="Report-1" class="TextoSobre report-Bug">Caso encontre algum bug...ficarei feliz em receber seu report:</h4>
+					<h5 id="Report-2" class="report-Bug">Formas de contato:</h5>
 					<div id="Quadro-Contatos" class="row mt-4 d-flex justify-content-center">
 							<div class="col-2"><img onclick="Contato(`https:www.instagram.com/andersonarorjdev/`)" class="contatos" src="./images/Instagram-ícone.png" alt=""></div>
 							<div class="col-2"><img onclick="Contato(`https:twitter.com/andersonarrjdev`)" class="contatos" src="./images/twitter-icone.png" alt=""></div>
@@ -95,10 +97,10 @@
 							<div class="col-2"><img onclick="Contato(`https:www.linkedin.com/in/andersonarorjdev/`)" class="contatos" src="./images/linkedin-icone.png" alt=""></div>
 					</div>
 					<div class="d-flex justify-content-center">
-						<button class="mt-3" id="Topo">Topo</button>
+						<a class="mt-3 d-flex justify-content-center"  id="Topo" href="#top">Topo</a>
 					</div>
 				</div>
-				<div class="col-2"></div>
+				<div class="col-0 col col-md-2 col-sm-2"></div>
 			</div>
 		</div>
 	</body>
