@@ -1,0 +1,158 @@
+
+#LimparCamposButton{
+border: 2px solid rgb(167, 57, 167);
+border-radius: 50px;
+height:50px;
+color:white;
+background-color:rgb(138, 16, 138);
+font-weight: bolder;
+width: 30vw;
+}
+
+#LimparCamposButton:hover{
+    color: rgb(138, 16, 138);
+    background-color: white;
+    border: 2px solid rgb(167, 57, 167);
+}
+
+#LimparCamposButton:focus {
+    outline:none;
+   }
+
+
+
+
+
+#PesquisarButton{
+    border: 2px solid rgb(167, 57, 167);
+    border-radius: 50px;
+    height:50px;
+    color:white;
+    background-color:rgb(138, 16, 138);
+    font-weight: bolder;
+    width: 30vw;
+}
+
+#PesquisarButton:hover{
+    color: rgb(138, 16, 138);
+    background-color: white;
+    border: 2px solid rgb(167, 57, 167);
+}
+
+#PesquisarButton:focus{
+    outline: none;
+}
+
+
+.nav{
+    background-color:#161615;
+    border-bottom: 1px solid blueviolet;
+}
+
+
+ input{
+     border: 2px solid black;
+     border-radius: 50px;
+     width: 60vw;
+     height: 50px;
+     padding-left: 20px;
+ }
+
+
+
+ #Pesquisa{
+    height: 80px;
+ }
+
+ #Pesquisa:hover{
+     border: 5px solid blueviolet;
+ }
+
+ #Pesquisa:focus{
+    border: 5px solid blueviolet;
+ }
+
+
+
+#corpo{
+    background-color:#1c1c1c;
+}
+
+.copiar{
+    width: 55px;
+    height: 55px;
+    margin-left: 10px;
+}
+
+h6{
+    color: white;
+}
+
+#SobreButton{
+    text-decoration: none;
+    color: rgb(163, 31, 224);
+    font-family: 'Fira Code', monospace;
+}
+
+#Pesquisa{
+    font-size: 25px;
+    color: black;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+
+.apresenta{
+    font-size: 18px;
+    color:black;
+}
+
+#Sobre{
+    border-top: 3px double blueviolet;
+    background-color:#1c1c1c;
+    padding-top:100px ;
+}
+
+.TextoSobre{
+    font-size: 35px;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: rgb(163, 31, 224);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#QuadroSobre{
+    padding: 10px;
+    border: 3px double  rgb(163, 31, 224);
+    border-radius: 20px;
+    font-size: 20px;
+    color: rgb(163, 31, 224);
+    background-color: white;
+    font-family: 'Fira Code', monospace;
+}
+
+#Voltar{
+    margin-top: 300px;
+}
+
+.report-Bug{
+    color: blueviolet;
+}
+
+.contatos{
+    width: 40px;
+    height: 40px;
+}
+
+#Quadro-Contatos{
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgb(18, 19, 18);
+}
+
+#Topo{
+    border: 3px solid rgb(46, 119, 46);
+    border-radius: 20px;
+    width: 35vh;
+    height: 40px;
+}
