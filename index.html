@@ -1,107 +1,31 @@
-<html lang="pt-br">
-	<head>
-		<a name="top" id="top"></a>
-		<meta charset="utf-8">
-		<link rel="shortcut icon" href="./images/iconeaba.jpg" >
-		<title>Get-Easy-My-Adress</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<script src="./Backend/main.js"></script>
-		<link rel="stylesheet" href="./styles/styles.css">
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Montserrat:wght@500&display=swap');
-		</style> 
-	</head>
-	<body>
-		<nav class="navbar nav navbar-light fixed-top">
-			<div class="container">
-				<div class="navbar-brand">
-					<img src="./images/getmyadressl-logo.png" height="50px" alt="">
-				</div>
-				<div>
-					<a href="#Sobre" id="SobreButton"><h3>INFORMAÇÕES</h3></a>
-				</div>
-			</div>
-		</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anderson ARORJ</title>
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-		<div class="container-fluid" id="corpo">
-			<!--Pesquisa-->
-			<div class="row mt-5 d-flex justify-content-center">
-				<input class="mt-5" type="text" id="Pesquisa"  placeholder="Digite aqui seu cep"/>
-			</div>
-			<!--Fim da pesquisa-->
-
-			<div class="row mt-5 d-flex justify-content-center">
-				<h6 class="pt-3 ml-2 mr-2">Rua:</h6>		
-				<input class="apresenta" type="text" id="Endereco" readonly />
-				<img class="copiar" onclick="RecuperaEndereco()" src="./images/copy.gif" alt="">
-			</div>
-			<div class="row my-2 d-flex justify-content-center">
-				<h6 class="pt-3 ml-2 mr-2">Bairro:</h6>
-				<input class="apresenta" type="text" id="Bairro" readonly />
-				<img class="copiar" onclick="RecuperaBairro()" src="./images/copy.gif" alt="">
-			</div>
-			<div class="row my-2 d-flex justify-content-center">
-				<h6 class="pt-3 ml-2 mr-2">Cidade:</h6>
-				<input class="apresenta" type="text" id="Cidade" readonly />
-				<img class="copiar" onclick="RecuperaCidade()" src="./images/copy.gif" alt="">
-			</div>		
-			<div class="row my-2 d-flex justify-content-center">
-				<h6 class="pt-3 ml-2 mr-2">UF:</h6>
-				<input class="apresenta" type="text" id="UF" readonly />
-				<img class="copiar" onclick="RecuperaUf()" src="./images/copy.gif" alt="">
-			</div>
-			<div class="row my-2 d-flex justify-content-center">
-				<h6 class="pt-3 ml-2 mr-2">Comp:</h6>
-				<input class="apresenta" type="text" id="Complemento" readonly />
-				<img class="copiar" onclick="RecuperaComplemento()" src="./images/copy.gif" alt="">
-			</div>
-			<div class="row mt-2 mb-3 d-flex justify-content-center">
-				<h6 class="pt-3 ml-2 mr-2">DD:</h6>
-				<input class="apresenta" type="text" id="DD" readonly />
-				<img class="copiar" onclick="RecuperaDD()" src="./images/copy.gif" alt="">
-			</div>
-			<div class="row d-flex justify-content-center">
-				<button id="PesquisarButton" onclick="getDadosEnderecoPorCep(Pesquisa.value)">Pesquisar</button>
-			</div>
-			<div class="row mt-2  pb-5 d-flex justify-content-center">
-				<button id="LimparCamposButton" onclick="LimpaCampos()">Limpar pesquisa</button>
-			</div>
-		</div>
-
-		<div class="container-fluid" id="Sobre">
-			<div class="row" >
-				<div class="col-sm-2 col-md-2 col-0"></div>
-				<div class="col-8">
-					<h1 class="TextoSobre my-5" id="TextoSobre">Sobre o Get Easy My Adress...</h1>
-					<div id="QuadroSobreBorda">
-						<p id="QuadroSobre">
-							Essa ferramenta foi desenvolvida com o intuito de ajudar naqueles momentos
-							em que você não sabe o endereço completo, ou não tem certeza sobre qualquer dado
-							de determinada região e mesmo pesquisando em vários sites você não consegue ter 
-							certeza sobre a informação que está encontrando. <br><br>
-							<strong>Foi pensando nisso que eu desenvolvi essa ferramenta!</strong><br><br>
-							A idéia de ser algo rápido, prático e de fácil acesso é o motivo pelo qual
-							a nossa sociedade tem se tornado cada vez mais tecnológica.
-							Adicione essa ferramenta as suas abas de favoritos e nunca mais fique sem saber sobre os
-							dados de determinado local. <br>
-							<strong>USE COM SABEDORIA! KKKKK.</strong>
-						</p>
-					</div>
-					<h4 id="Report-1" class="TextoSobre report-Bug">Caso encontre algum bug...ficarei feliz em receber seu report:</h4>
-					<h5 id="Report-2" class="report-Bug">Formas de contato:</h5>
-					<div id="Quadro-Contatos" class="row mt-4 d-flex justify-content-center">
-							<div class="col-2"><img onclick="Contato(`https:www.instagram.com/andersonarorjdev/`)" class="contatos" src="./images/Instagram-ícone.png" alt=""></div>
-							<div class="col-2"><img onclick="Contato(`https:twitter.com/andersonarrjdev`)" class="contatos" src="./images/twitter-icone.png" alt=""></div>
-							<div class="col-2"><img onclick="Contato()" class="contatos" src="./images/email-icone.png" alt=""></div>
-							<div class="col-2"><img onclick="Contato('https:github.com/andersonarorjdev')" class="contatos" src="./images/github-icone.png" alt=""></div>
-							<div class="col-2"><img onclick="Contato(`https:www.linkedin.com/in/andersonarorjdev/`)" class="contatos" src="./images/linkedin-icone.png" alt=""></div>
-					</div>
-					<div class="d-flex justify-content-center">
-						<a class="mt-3 d-flex justify-content-center"  id="Topo" href="#top">Topo</a>
-					</div>
-				</div>
-				<div class="col-0 col col-md-2 col-sm-2"></div>
-			</div>
-		</div>
-	</body>
-</html>
+<!-- JS, Popper.js, and jQuery -->
+<link rel="stylesheet" href="./styles/index.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container" class="container-fluid ">
+        <div class="row d-flex justify-content-center mt-4 mb-3">
+            <h1 id="letreiro">Site em Construção...</h1>
+            <img src="./images/Development.gif" id="relogio" alt="">
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-3">
+                <img src="./images/potato-computer.gif"  id="potato" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="./JS/main.js"></script>
+</body>
+</html>     
