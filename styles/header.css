@@ -3,6 +3,14 @@
   font-family: TitilliumWeb;
   src: url('../fonts/TitilliumWeb-Montserrat/Titillium_Web/TitilliumWeb-Regular.ttf');
 }
+@font-face{
+  font-family: MontserratBold;
+  src:url('../fonts/TitilliumWeb-Montserrat/Montserrat/Montserrat-Bold.ttf');
+}
+@font-face{
+  font-family: MontserratRegular;
+  src: url('../fonts/TitilliumWeb-Montserrat/Montserrat/Montserrat-Regular.ttf');
+}
 
 /* Estilização do header */
 #BeforeNavbar{
@@ -124,11 +132,73 @@ div:nth-child(2){
   text-align: center;
 } 
 
-
 /* Settings for Desktop Navbar */
 #NavbarDesktop{
   background-color:blue;
   height: 10px;  
+}
+
+
+/* Settings for main slidder */
+#MainSlider{
+  height: 60vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('../images/MainBanner.svg');
+  background-position: center;
+  background-size:cover;
+}
+
+#MainSlider > img{
+  width: 19,42px;
+  height: 32px;
+  margin: 0px 20px;
+}
+
+#MainContent{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#MainContent > h1{
+  color:#FFFFFF;
+  font-size: 34px;
+  font-family: MontserratBold;
+  line-height: 37px;
+  font-weight: bold;
+
+}
+
+#MainContent > p{
+  padding:15px 0px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: MontserratRegular;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+#MainContent > button{
+  font-size: 14px;
+  font-family: MontserratBold;
+  line-height: 17,07px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+
+  background-color:#FAA500;
+  border: 0px;
+  padding:8px 15px;
+  border-radius: 8px;
+}
+
+#MainContent > button:hover{
+  color:#FAA500;
+  background-color: #FFFFFF;
 }
 
 /* Media queries para o ajuste das regras de responsividade */

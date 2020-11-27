@@ -17,6 +17,7 @@
 
   <!-- Exernal Scripts Sheets -->
   <script src="./javascript/Menu.js"></script>
+  <script src="./javascript/MainSlider.js"></script>
 </head>
 <body>
   <header>
@@ -51,11 +52,22 @@
           <img id="Bag" src="./assets/Shop.svg" alt="My Bag">
         </div>
     </nav>
-    
-
+  
     <nav id="NavbarDesktop">
 
     </nav>
+    <section id="MainSlider">
+      <img onclick="PreviousSlide()" src="./assets/LeftSlideButton.svg" alt="Previous Slide">
+        <div id="MainContent">
+            <h1>Promoções de Outono</h1>
+            <p>
+                Confira os melhores looks para <br/> com você nesse Outono.   
+            </p>
+            <button>Conferir</button>
+             <span>circles</span>
+        </div>
+      <img onclick="NextSlide()" src="./assets/RightSlide.svg" alt="Next Slide">
+    </section>
   </header>
   <main>
 
