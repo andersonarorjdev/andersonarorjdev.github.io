@@ -2,11 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta 
+      name="viewport" 
+      content="width=device-width, initial-scale=1.0"
+  >
   <title>Maeztra Online</title>
-  <link rel="icon" href="https://maeztra.com/wp-content/uploads/2019/11/cropped-favicon-1-192x192.png">
+  <link
+      rel="icon" 
+      href="https://maeztra.com/wp-content/uploads/2019/11/cropped-favicon-1-192x192.png"
+  >
+  <!-- External stylesheets -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/header.css">
+
+  <!-- Exernal Scripts Sheets -->
+  <script src="./javascript/Menu.js"></script>
 </head>
 <body>
-  
+  <header>
+    <div id="BeforeNavbar">
+        <h4>Acompanhe as melhores promoções disponíveis aqui na Maeztra</h4>
+      </div>
+          <div id="ResponsiveMenu">
+            <span>
+              <img id="Close" onclick="CloseMenu()" src="./assets/cancel.svg" alt="Close Menu">
+            </span>
+            <div id="SmallMenu">
+              <ul>
+                <li><a href="/">Minha Conta</a></li>
+                <li><a href="/">Novidades</a></li>
+                <li><a href="/">Vestidos</a></li>
+                <li><a href="/">Roupas</a></li>
+                <li><a href="/">Sapatos</a></li>
+                <li><a href="/">Lingerie</a></li>
+                <li><a href="/">Acessórios</a></li>
+                <li><a href="/">OUTLET</a></li>
+              </ul>
+            </div>
+          </div>
+    <nav id="NavbarMobile">
+      <!-- Responsive Menu to show on small devices -->
+        <div>
+          <img onclick="OpenMenu()" id="Menu" src="./assets/MenuHamburguer.svg" alt="Menu">
+          <img id="Logo" src="./assets/Logo.svg" alt="Maeztra Logo">
+        </div>
+        <div>
+          <img id="Finder" src="./assets/Finder.svg" alt="Search Icon">
+          <img id="Bag" src="./assets/Shop.svg" alt="My Bag">
+        </div>
+    </nav>
+    
+
+    <nav id="NavbarDesktop">
+
+    </nav>
+  </header>
+  <main>
+
+  </main>
+  <footer>
+
+  </footer>
 </body>
 </html>

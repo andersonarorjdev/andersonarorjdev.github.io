@@ -1,0 +1,145 @@
+/* Adicionando as fontes ao documento */
+@font-face{
+  font-family: TitilliumWeb;
+  src: url('../fonts/TitilliumWeb-Montserrat/Titillium_Web/TitilliumWeb-Regular.ttf');
+}
+
+/* Estilização do header */
+#BeforeNavbar{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+
+  height: 3%;
+  background-color: #353535;
+  padding: 4px 0px;
+  color: #FFFFFF;
+
+  font-size: 11px;
+  font-family:TitilliumWeb;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+
+/* Settings for mobile Navbar */
+
+#NavbarMobile{
+ height: 25%;
+
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+
+ padding:17px 12px;
+ background-color: #FFFFFF;
+}
+
+#Menu{
+  width:24px;
+  height:24px;
+  margin: 0px 10px;
+}
+#Logo{
+  width: 110px;
+  height: 11,86px;
+  margin: 0px 10px;
+}
+#Finder{
+  width: 24px;
+  height: 24px;
+  margin: 0px 20px;
+}
+#Bag{
+  width: 20,77;
+  height: 24px;
+  margin: 0px 20px;
+}
+div:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+div:nth-child(2){
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Styles for responsive menu, will show just on small devices */
+#ResponsiveMenu{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  z-index:2;
+
+  background-color: #FFFFFF;
+}
+  span{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+#Close{
+  width: 24px;
+  height: 24px;
+  margin:18px 0px 0px 23px;
+}
+
+#SmallMenu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin:10px 0px 0px 0px;
+}
+
+#SmallMenu > ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+}
+
+#SmallMenu > ul > li{
+  margin: 15px 0px;
+}
+
+#SmallMenu > ul > li:hover{
+  border-bottom:4px double  #FAA500;
+  transition: 0.2s;
+}
+
+#SmallMenu > ul > li > a{
+  text-decoration:none;
+  color: #000000;
+  font-style: TitilliumWeb;
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+} 
+
+
+/* Settings for Desktop Navbar */
+#NavbarDesktop{
+  background-color:blue;
+  height: 10px;  
+}
+
+/* Media queries para o ajuste das regras de responsividade */
+@media(max-width:768px){
+    #NavbarDesktop{
+      display: none;
+    }
+}
+
+@media(min-width: 769px){
+    #NavbarMobile{
+      display: none;
+    }
+}
