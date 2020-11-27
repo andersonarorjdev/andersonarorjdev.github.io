@@ -33,7 +33,7 @@
  justify-content: space-between;
  align-items: center;
 
- padding:17px 12px;
+ padding:20px 12px;
  background-color: #FFFFFF;
 }
 
@@ -111,14 +111,14 @@ div:nth-child(2){
 
 #SmallMenu > ul > li:hover{
   border-bottom:4px double  #FAA500;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 #SmallMenu > ul > li > a{
   text-decoration:none;
   color: #000000;
   font-style: TitilliumWeb;
-  font-size: 22px;
+  font-size: 35px;
   line-height: 20px;
   font-weight: 400;
   text-align: center;
