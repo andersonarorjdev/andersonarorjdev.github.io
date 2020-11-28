@@ -230,9 +230,9 @@ div:nth-child(2){
 
 #SlidderWhyBuy {
   padding:0px 20px 0px 20px;
-  width: 95vw;
+  width: 96vw;
   display: grid;
-  grid-template-columns: repeat(6, calc(98% - 20px * 2));
+  grid-template-columns: repeat(5, calc(100% - 20px * 2));
   grid-template-rows: minmax(15vh, 1fr);
   
   overflow-x: auto;
@@ -249,7 +249,7 @@ ul {
 .CardBuy {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
   background-color:#EFEFEF;
@@ -260,11 +260,7 @@ ul {
 }
 
 .CardBuy > img{
-  margin: 0px 0px 0px 40px;
-}
-
-.CardBuy > article {
-  margin:0px 60px 0px 0px;
+ padding:0px 20px 0px 0px;
 }
 
 .CardBuy > article > h4{

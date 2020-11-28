@@ -1,0 +1,45 @@
+#PartnersCompanys > article{
+  padding:40px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#PartnersCompanys > article > h1{
+  font-size: 24px;
+  font-family: TitilliumWebBold;
+  color:#353535;
+  text-align: center;
+  line-height: 48,68px;
+}
+
+#PartnersSlidder {
+  padding:0px 20px 0px 20px;
+  width: 96vw;
+  display: grid;
+  grid-template-columns: repeat(5, calc(100% - 20px * 2));
+  grid-template-rows: minmax(15vh, 1fr);
+  
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  padding-bottom: calc(.75 * 20px);
+  margin-bottom: calc(-.25 * 20px);
+}
+
+ul {
+  list-style: none;
+  margin:0;
+}
+
+.Partners {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  border-radius:6px;
+
+  /* margin: 0px 8px; */
+  scroll-snap-align: center;
+}
