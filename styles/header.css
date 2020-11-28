@@ -4,6 +4,10 @@
   src: url('../fonts/TitilliumWeb-Montserrat/Titillium_Web/TitilliumWeb-Regular.ttf');
 }
 @font-face{
+  font-family: TitilliumWebBold;
+  src: url('../fonts/TitilliumWeb-Montserrat/Titillium_Web/TitilliumWeb-Bold.ttf');
+}
+@font-face{
   font-family: MontserratBold;
   src:url('../fonts/TitilliumWeb-Montserrat/Montserrat/Montserrat-Bold.ttf');
 }
@@ -199,6 +203,84 @@ div:nth-child(2){
 #MainContent > button:hover{
   color:#FAA500;
   background-color: #FFFFFF;
+}
+
+/* WhyBuy */
+#WhyTitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding:20px 0px;
+}
+#WhyTitle > h1{
+  font-size: 16px;
+  line-height: 24,34px;
+  text-align: center;
+  font-family: TitilliumWebBold;
+  font-weight: 700;
+
+  color: #353535;
+
+
+}
+
+/* Slidder Why Buy */
+
+#SlidderWhyBuy {
+  padding:0px 20px 0px 20px;
+  width: 95vw;
+  display: grid;
+  grid-template-columns: repeat(6, calc(98% - 20px * 2));
+  grid-template-rows: minmax(15vh, 1fr);
+  
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  padding-bottom: calc(.75 * 20px);
+  margin-bottom: calc(-.25 * 20px);
+}
+
+ul {
+  list-style: none;
+  margin:0;
+}
+
+.CardBuy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color:#EFEFEF;
+  border-radius:6px;
+
+  margin: 0px 8px;
+  scroll-snap-align: center;
+}
+
+.CardBuy > img{
+  margin: 0px 0px 0px 40px;
+}
+
+.CardBuy > article {
+  margin:0px 60px 0px 0px;
+}
+
+.CardBuy > article > h4{
+  color:#353535;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: TitilliumWebBold;
+  line-height: 21,29px;
+}
+
+.CardBuy > article >p{
+  color:#000000;
+  font-family: TitilliumWeb;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18,25px;
 }
 
 /* Media queries para o ajuste das regras de responsividade */

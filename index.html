@@ -18,8 +18,10 @@
   <!-- Exernal Scripts Sheets -->
   <script src="./javascript/Menu.js"></script>
   <script src="./javascript/MainSlider.js"></script>
+  <script src="./javascript/WhySlider.js"></script>
+
 </head>
-<body>
+<body onload="CardSliderWhyBuy()">
   <header>
     <div id="BeforeNavbar">
         <h4>Acompanhe as melhores promoções disponíveis aqui na Maeztra</h4>
@@ -64,9 +66,52 @@
                 Confira os melhores looks para <br/> com você nesse Outono.   
             </p>
             <button>Conferir</button>
-             <span>circles</span>
+             <div id="Circles">
+             </div>
         </div>
       <img onclick="NextSlide()" src="./assets/RightSlide.svg" alt="Next Slide">
+    </section>
+    <section id="WhyBuy">
+        <div id="WhyTitle">
+            <h1>Por que comprar na Maeztra?</h1>
+        </div>
+        <ul id="SlidderWhyBuy">
+          <li class="CardBuy">
+            <img src="./assets/WorldIcon.svg" alt="World">
+            <article>
+              <h4>Produtos Importados</h4>
+              <p>Produto de Alta Qualidade</p>
+            </article>
+          </li>
+          <li class="CardBuy">
+            <img src="./assets/DepositIcon.svg" alt="Deposit">
+            <article>
+              <h4>Estoque no Brazil</h4>
+              <p>Produtos mais perto de você!</p>
+            </article>
+          </li>
+          <li class="CardBuy">
+            <img src="./assets/TradeBoxIcon.svg" alt="Trades Garanted">
+            <article>
+              <h4>Trocas Garantidas</h4>
+              <p>Trocas em até 48 horas, veja as regras.</p>
+            </article>
+          </li>
+          <li class="CardBuy">
+            <img src="./assets/TagIcon.svg" alt="Descont">
+            <article>
+              <h4>Ganhe 5% off</h4>
+              <p>Pagando á vista no cartão</p>
+            </article> 
+          </li>
+          <li class="CardBuy">
+            <img src="./assets/TruckIcon.svg" alt="Free Delivery">
+            <article>
+              <h4>Frete Grátis</h4>
+              <p>Em compras acima de R$ 499,00</p>
+            </article>
+          </li>
+        </ul>
     </section>
   </header>
   <main>
