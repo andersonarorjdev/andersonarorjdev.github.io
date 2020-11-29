@@ -406,15 +406,40 @@ ul {
   border-radius: 10px;
 
   margin:5px;
+  padding:10px 10px;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 #WhyBuyCards > div > img{
   width:60px;
   height:50px;
+}
+
+#WhyBuyCards > div > article{
+  display: flex;
+  flex-direction: column;
+}
+
+#WhyBuyCards > div > article > h4{
+  font-family: TitilliumWebBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #353535;
+}
+
+#WhyBuyCards > div > article > p{
+  font-family: TitilliumWeb;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
 }
 
 /* Media queries para o ajuste das regras de responsividade */
@@ -475,10 +500,33 @@ ul {
   #WhyBuyCards{
     justify-content:space-between;
   }
+
+  #WhyBuyCards > div > img{
+    width:60px;
+    height:50px;
+  }
+  
+  #WhyBuyCards > div > article > h4{
+    font-family: TitilliumWebBold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #353535;
+  }
+  
+  #WhyBuyCards > div > article > p{
+    font-family: TitilliumWeb;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+  }
   
   #WhyBuyCards > div{
     width: 243px;
-    height: 100px;
+    height: 80px;
     margin:5px;
   }
 }
@@ -496,6 +544,15 @@ ul {
   #WhyBuyCards > div{
     width: 243px;
     height: 100px;
+    justify-content: space-around;
+  }
+
+  #WhyBuyCards > div > article > h4{
+    font-size: 14px;
+  }
+  
+  #WhyBuyCards > div > article > p{
+    font-size: 11px;
   }
 }
 @media(min-width:601px) and (max-width:799px){
@@ -505,5 +562,7 @@ ul {
   
   #WhyBuyCards > div{
     width:50vw;
+    justify-content:space-around;
+    padding:0px 50px;
   }
 }
