@@ -1,5 +1,5 @@
 #PartnersCompanys > article{
-  padding:40px 0px;
+  padding:20px 0px 20px 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -14,32 +14,94 @@
   line-height: 48,68px;
 }
 
-#PartnersSlidder {
-  padding:0px 20px 0px 20px;
-  width: 96vw;
-  display: grid;
-  grid-template-columns: repeat(5, calc(100% - 20px * 2));
-  grid-template-rows: minmax(15vh, 1fr);
+/* Parners slidder */
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+.slider {
+	background: #FFFFFF;
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width:100vw;
+}
+	.slider::before,
+	.slider::after {
+		@include white-gradient;
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	.slider::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	.slider::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll 40s linear infinite;
+		display: flex;
+    /* width: calc(250px * 14); */
+    width: 4000px;
+	}
+	
+	.slide {
+		height: 100%;
+		width:300px;
+  }
   
-  overflow-x: auto;
-  scroll-snap-type: x proximity;
-  padding-bottom: calc(.75 * 20px);
-  margin-bottom: calc(-.25 * 20px);
-}
+  .slide > img{
+    height: 100%;
+    width: 100%;
+    padding: 0px 10px 0px 0px;
+  }
 
-ul {
-  list-style: none;
-  margin:0;
-}
+/* MostAskingPart */
+  #MostAsking > article > h1{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36,5px;
+    text-align: center;
+    font-family: TitilliumWebBold;
+    color:#353535;
 
-.Partners {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+    margin:20px 0px;
+  }
 
-  border-radius:6px;
+  .solucoes-box {
+    background-color: #fff;
+    padding: 4.5rem;
+    margin-bottom: 3rem;
+    transition: all 500ms ease;
+  }
 
-  /* margin: 0px 8px; */
-  scroll-snap-align: center;
-}
+  .solucoes-box:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  }
+
+  .solucoes-box .solucoes-ico {
+    margin-bottom: 1rem;
+    color: #004398;
+    text-align: center;
+  }
+
+  .solucoes-box .icone-solucoes {
+    transition: all 500ms ease;
+    font-size: 3.5rem;
+  }
+
+  .solucoes-box h2 {
+    text-align: center;
+  }
