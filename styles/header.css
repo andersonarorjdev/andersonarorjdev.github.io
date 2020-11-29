@@ -389,6 +389,33 @@ ul {
   font-weight: 400;
   line-height: 18,25px;
 }
+/* Card Why Buy for desktop */
+
+#WhyBuyCards{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#WhyBuyCards > div{
+  width: 243px;
+  height: 150px;
+  background-color:#EFEFEF;
+  border-radius: 10px;
+
+  margin:5px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#WhyBuyCards > div > img{
+  width:60px;
+  height:50px;
+}
 
 /* Media queries para o ajuste das regras de responsividade */
 @media(max-width:768px){
@@ -422,4 +449,61 @@ ul {
       background-color: #353535;
       padding:2px 0px 5px 0px;
     }
+}
+
+@media(min-width:500px) and (max-width:600px){
+    .CardBuy{
+      width: 70vw;
+    }
+}
+
+@media(min-width:601px){
+ #SlidderWhyBuy{
+   display:none;
+ }
+}
+
+@media(max-width:601px){
+  #WhyBuyCards{ 
+    display: none;
+  }
+}
+
+/* Media-queries to adjust cards "WhyBuy"*/
+
+@media(min-width:1268px){
+  #WhyBuyCards{
+    justify-content:space-between;
+  }
+  
+  #WhyBuyCards > div{
+    width: 243px;
+    height: 100px;
+    margin:5px;
+  }
+}
+
+@media(min-width:1016px) and (max-width:1267px){
+  #WhyBuyCards{
+    justify-content:space-around;
+  }
+}
+@media(min-width:800px) and (max-width:1015px){
+  #WhyBuyCards{
+    justify-content:center;
+  }
+  
+  #WhyBuyCards > div{
+    width: 243px;
+    height: 100px;
+  }
+}
+@media(min-width:601px) and (max-width:799px){
+  #WhyBuyCards{
+    justify-content:center;
+  }
+  
+  #WhyBuyCards > div{
+    width:50vw;
+  }
 }
