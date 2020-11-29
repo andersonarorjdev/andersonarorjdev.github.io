@@ -31,7 +31,6 @@
 }
 	.slider::before,
 	.slider::after {
-		@include white-gradient;
 		content: "";
 		height: 100px;
 		position: absolute;
@@ -77,31 +76,48 @@
     font-family: TitilliumWebBold;
     color:#353535;
 
-    margin:20px 0px;
+    margin:20px 0px 30px 0px;
   }
 
-  .solucoes-box {
-    background-color: #fff;
-    padding: 4.5rem;
-    margin-bottom: 3rem;
-    transition: all 500ms ease;
+  #NewCollection{
+    margin: 20px 0px 20px 0px;
+    width: 100vw;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+  }
+  #NewCollection > article{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items:start;
   }
 
-  .solucoes-box:hover {
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  #NewCollection > article > h1{
+    font-size: 24px;
+    color:#000000;
+    font-family: TitilliumWebBold;
+    line-height: 36,5px;
+    font-weight: 700;
+    padding:0px 0px 4% 4%;
   }
 
-  .solucoes-box .solucoes-ico {
-    margin-bottom: 1rem;
-    color: #004398;
-    text-align: center;
+  #NewCollection > article > p{
+    font-size: 16px;
+    font-family: TitilliumWeb;
+    color:#000000;
+    line-height: 21,29px;
+    font-weight: 400;
+    text-align: start;
+
+    padding: 0px 20px;
   }
 
-  .solucoes-box .icone-solucoes {
-    transition: all 500ms ease;
-    font-size: 3.5rem;
-  }
-
-  .solucoes-box h2 {
-    text-align: center;
+  #NewCollection > div > img{
+    width:88vw;
+    height:50vh;
+    border-radius:10px;
   }
