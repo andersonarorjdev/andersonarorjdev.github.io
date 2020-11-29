@@ -17,18 +17,18 @@
 }
 
 /* Estilização do header */
-#BeforeNavbar{
+#SemiNavbar{
   display:flex;
   flex-direction: row;
   justify-content: center;
   align-items:center;
 
-  height: 3%;
+  height: 2%;
   background-color: #353535;
-  padding: 4px 0px;
+  padding:2px 0px 0px 0px;
   color: #FFFFFF;
 
-  font-size: 11px;
+  font-size: 14px;
   font-family:TitilliumWeb;
   font-weight: 400;
   line-height: 18px;

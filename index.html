@@ -22,12 +22,19 @@
   <script src="./javascript/MainSlider.js"></script>
   <script src="./javascript/WhySlider.js"></script>
   <script src="./javascript/ProductsSlider.js"></script>
+  <script src="./javascript/collapse.js"></script>
 
+  <!-- Bootstrap Sheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<!-- jQuery and JS bundle w/ Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </head>
 <body onload="CardSliderWhyBuy()">
   <header>
-    <div id="BeforeNavbar">
-        <h4>Acompanhe as melhores promoções disponíveis aqui na Maeztra</h4>
+    <div id="SemiNavbar">
+        <p>Acompanhe as melhores promoções disponíveis aqui na Maeztra</p>
       </div>
           <div id="ResponsiveMenu">
             <span>
@@ -176,7 +183,7 @@
             <img src="./assets/CommaPartner.svg" alt="Commar Partner">
           </div>
           <div class="slide">
-            <img src="./assets/MelissaPartner.svg" alt="Melissa Partner">
+             <img src="./assets/MelissaPartner.svg" alt="Melissa Partner">
           </div>
           <div class="slide">
             <img src="./assets/ZaraPartner.svg" alt="Zara Partner">
@@ -219,6 +226,83 @@
       <div>
         <input type="text" name="" id="" placeholder="Digite o seu email">
         <button>Enviar</button>
+      </div>
+    </section>
+    <section id="FooterMenu">
+
+      <p>
+        <a class="CollapseButton text-decoration-none" data-toggle="collapse" href="#Information" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Informações
+        </a>
+      </p>
+      <div class="collapse" id="Information">
+        <ul class="content" id="MenuFooter">
+          <li>
+            <a href="">Quem Somos</a>
+          </li>
+          <li>
+            <a href="">Prazo de Envio</a>
+          </li>
+          <li>
+            <a href="">Trocas e Devoluções</a>
+          </li>
+          <li>
+            <a href="">Promoções e Cupons</a>
+          </li>
+        </ul>
+      </div>
+
+      <p>
+        <a class="CollapseButton text-decoration-none" data-toggle="collapse" href="#MyAccount" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Minha Conta
+        </a>
+      </p>
+      <div class="collapse" id="MyAccount">
+        <ul class="content">
+          <li>
+            <a href="">Minha Conta</a>
+          </li>
+          <li>
+            <a href="">Meus Pedidos</a>
+          </li>
+          <li>
+            <a href="">Cadastre-se</a>
+          </li>
+        </ul>
+      </div>
+
+      <p>
+        <a class="CollapseButton text-decoration-none" data-toggle="collapse" href="#WhereFind" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Onde Nos Encontrar
+        </a>
+      </p>
+      <div class="collapse" id="WhereFind">
+        <ul class="content">
+          <li>
+            <a href="">Loja</a>
+          </li>
+          <li>
+            <a href="">Endereço</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="Footer">
+      <div>
+        <img src="./assets/facebook.com.svg" alt="">
+        <img src="./assets/LinkedinIcon.svg" alt="">
+        <img src="./assets/Instagram.svg" alt="">
+        <img src="./assets/YoutubeIcon.svg" alt="">
+      </div>
+      <div>
+        <img src="./assets/VisaIcon.svg" alt="">
+        <img src="./assets/MastercardIcon.svg" alt="">
+        <img src="./assets/VisaIcon.svg " alt="">
+        <img src="./assets/MastercardIcon.svg" alt="">
+      </div>
+      <div>
+        <img src="./assets/VtexFooterIcon.svg" alt="">
+        <img src="./assets/Maeztralogofooter.svg" alt="">
       </div>
     </section>
   </footer>
