@@ -1,0 +1,51 @@
+#NewsLetter{
+  margin:40px 0px;
+  border: 2px solid #EFEFEF;
+  text-align: center;
+  height: 23vh;
+}
+
+#NewsLetter > h1{
+  font-size: 24px;
+  line-height: 36,5px;
+  color:#353535;
+  font-weight: 700;
+  font-family: TitilliumWebBold;
+
+  padding:20px 0px 10px 0px;
+}
+
+#NewsLetter > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#NewsLetter > div > input{
+  width: 60vw;
+  margin: 0px 20px 0px 0px;
+  
+  border:1px solid #353535;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 21,29px;
+  font-family: TitilliumWeb;
+  font-weight: 400;
+  color:#353535;
+
+  padding:0px 20px;
+}
+
+#NewsLetter > div > button{
+  width:100px;
+  background-color: #FAA500;
+  border-radius: 4px;
+  color:#FFFFFF;
+  border:none;
+
+  padding:5px 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21,29px;
+  font-family: TitilliumWebBold;
+}
