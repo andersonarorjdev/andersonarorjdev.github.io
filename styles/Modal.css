@@ -84,6 +84,8 @@
 
   bottom:130px;
   align-self: flex-end;
+
+  padding:10px 20px 0px 0px;
 }
 
 #Modal > div:nth-child(2) > img{
@@ -140,7 +142,7 @@
 
 @media(max-width:815px){
   #SmallModal{
-    margin:30% 10% 0% 10%;
+    margin:30% 12% 0% 15%;
     width: 70vw;
   }
   #SmallModal >  input{
@@ -158,5 +160,11 @@
 @media(min-width:815px){
   #SmallModal > input{
     width: 50vw;
+  }
+}
+
+@media(max-width:500px){
+  #SmallModal{
+    margin:20% 10% 0% 10%;
   }
 }
