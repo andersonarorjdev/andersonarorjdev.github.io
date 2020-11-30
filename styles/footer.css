@@ -79,25 +79,70 @@
  color:#000000;
 }
 
-
+/* Settings for footer */
 #Footer{
   background-color: #353535;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
 
-  padding:10px 30px;
+  padding:30px 20px;
 }
 
 #Footer > div{
-  width: 50vw;
+  width: 18vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
+/* Settings for footer Desktop */
+  #FooterDesktop{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #FooterDesktop > div{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: baseline;
+  }
+
+  #FooterDesktop > div > h2{
+    font-family: TitilliumWebBold;
+    font-style: normal;
+    font-weight:bold;
+    font-size: 16px;
+    line-height: 18px;
+
+    color:#353535;
+  }
+
+  #FooterDesktop > div > ul > li > a{
+    font-family: TitilliumWeb;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    color:#000000;
+    text-decoration: none;
+  }
+
+  #FooterDesktop > div > ul > li > a:hover{
+    color:#FAA500;
+  }
+
 @media(max-width:768px){
+
+  #FooterDesktop{
+    display:none;
+  }
 
   #Footer{
     flex-direction: column;
@@ -110,5 +155,11 @@
     align-items: center;
 
     padding:10px 0px 10px 0px;
+  }
+}
+
+@media(min-width:769px){
+  #FooterMenu{
+    display: none;
   }
 }
