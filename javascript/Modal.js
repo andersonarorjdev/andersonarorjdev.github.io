@@ -8,10 +8,15 @@ const LaunchModal =  setTimeout( () => {
     else{
       ModalGreat.style.display = "flex";
     }
-}, 2000);
+}, 3000);
 
 
 const CloseModal = _ =>{
   let Modal = document.getElementById('Modal');
       Modal.style.display = "none";
+}
+
+const CloseSmallModal = _ =>{
+    let SmallModal = document.getElementById('SmallModal');
+        SmallModal.style.display = "none";
 }

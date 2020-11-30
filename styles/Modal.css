@@ -83,7 +83,7 @@
   position: relative;
 
   bottom:130px;
-  left: 140px;
+  align-self: flex-end;
 }
 
 #Modal > div:nth-child(2) > img{
@@ -102,4 +102,61 @@
 
   position: absolute;
   background-color: white;
+}
+
+#SmallModal > h5{
+  font-family: TitilliumWeb;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  
+  color: #464B54;
+}
+
+#SmallModal > h4{
+  font-family: TitilliumWeb;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  
+  text-align: center;
+  color: #787D83;
+}
+
+#CloseSmallModal{
+  align-self: flex-end;
+  padding:0px 20px 0px 0px;
+  color:#000000;
+
+  background-color: transparent;
+  border:none;
+}
+
+#SmallModal > input{
+  width: 70vw;
+}
+
+@media(max-width:815px){
+  #SmallModal{
+    margin:30% 10% 0% 10%;
+    width: 70vw;
+  }
+  #SmallModal >  input{
+    width: 60vw;
+  }
+}
+
+@media(max-width:700px){
+  #SmallModal{
+    width:80vw;
+    height: 30vh;
+  }
+}
+
+@media(min-width:815px){
+  #SmallModal > input{
+    width: 50vw;
+  }
 }
