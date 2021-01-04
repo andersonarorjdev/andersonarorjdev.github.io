@@ -39,7 +39,7 @@ const RecuperaPosicao = _ =>{
           let longitude = position.coords.longitude;
   
           axios({
-              url:`https://nominatim.openstreetmap.org/reverse?format=json&lat=${-22.3779635}&lon=${-41.7864711}&zoom=18&addressdetails=1`,
+              url:`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}&zoom=18&addressdetails=1`,
               method:'get',
               data:{
                   format: 'json',
@@ -51,7 +51,7 @@ const RecuperaPosicao = _ =>{
               })
               .then((response) => {
                   let state = response.data.address.state;
-                  let city = response.data.address.city;
+                  let city = response.data.address.town;
                   let street = response.data.address.road;
                       console.log(state, city, street);
                       console.log(response);
