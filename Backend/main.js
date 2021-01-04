@@ -51,7 +51,15 @@ const RecuperaPosicao = _ =>{
               })
               .then((response) => {
                   let state = response.data.address.state;
-                  let city = response.data.address.town;
+                  let city = null;
+
+                    if(response.data.address.town == undefined){
+                       city = response.data.address.city;
+                    }
+                    else{
+                        city = response.data.address.town;
+                    }
+
                   let street = response.data.address.road;
                       console.log(state, city, street);
                       console.log(response);
@@ -65,7 +73,7 @@ const RecuperaPosicao = _ =>{
                                   .then((response) =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                   })
                               break;
   
@@ -78,7 +86,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                   })
                               break;
   
@@ -91,7 +99,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                   })
                               break;
   
@@ -104,7 +112,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                   })
                               break;
   
@@ -117,7 +125,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                   })
                               break;
   
@@ -130,7 +138,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                   })
                               break;
   
@@ -143,7 +151,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                   })
                               break;
   
@@ -156,7 +164,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                   })
                               break;
   
@@ -169,7 +177,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                   })
                               break;
   
@@ -182,7 +190,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                   })
                               break;
   
@@ -195,7 +203,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                   })
                               break;
   
@@ -208,7 +216,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                   })
                               break;
   
@@ -221,7 +229,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                   })
                               break;
   
@@ -234,7 +242,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                   })
                               break;
   
@@ -247,7 +255,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                   })
                               break;
   
@@ -260,7 +268,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                   })
                               break;
   
@@ -273,7 +281,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                       })
                               break;
   
@@ -286,59 +294,59 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                       })
                               break;
   
                           case 'Rio Grande do Norte' || 'Rio grande do norte':
                               axios({
-                                  url: `https://viacep.com.br/ws/RJ/${city}/${street}/json`,
+                                  url: `https://viacep.com.br/ws/RN/${city}/${street}/json`,
                                   method: 'get',
                                   })
                                   .then((response) =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                       })
                               break;
                           
                           case 'Rio Grande do Sul' || 'Rio Grande Do Sul':
                               axios({
-                                  url: `https://viacep.com.br/ws/RJ/${city}/${street}/json`,
+                                  url: `https://viacep.com.br/ws/RS/${city}/${street}/json`,
                                   method: 'get',
                                   })
                                   .then((response) =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                       })
                               break;
   
                           case 'Rondônia' || 'Rondonia':
                               axios({
-                                  url: `https://viacep.com.br/ws/RJ/${city}/${street}/json`,
+                                  url: `https://viacep.com.br/ws/RO/${city}/${street}/json`,
                                   method: 'get',
                                   })
                                   .then((response) =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                       })
                               break;
   
                           case 'Roraima':
                               axios({
-                                  url: `https://viacep.com.br/ws/RJ/${city}/${street}/json`,
+                                  url: `https://viacep.com.br/ws/RR/${city}/${street}/json`,
                                   method: 'get',
                                   })
                                   .then((response) =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                       })
                               break;
   
@@ -351,58 +359,58 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                   })
                              break;
   
                           case 'São Paulo' || 'Sao Paulo':
                               axios({
-                                  url: `https://viacep.com.br/ws/RJ/${city}/${street}/json`,
+                                  url: `https://viacep.com.br/ws/SP/${city}/${street}/json`,
                                   method: 'get',
                                   })
                                   .then((response) =>{
                                       console.log(response);
-                                      let cep = response.data.cep;
+                                      let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                       })
                               break;
   
                           case 'Sergipe':
                               axios({
-                                  url: `https://viacep.com.br/ws/RJ/${city}/${street}/json`,
+                                  url: `https://viacep.com.br/ws/SE/${city}/${street}/json`,
                                   method: 'get',
                                   })
                                   .then((response) =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;                                    })
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;                                    })
                               break;
   
                           case 'Tocantins':
                               axios({
-                                  url: `https://viacep.com.br/ws/RJ/${city}/${street}/json`,
+                                  url: `https://viacep.com.br/ws/TO/${city}/${street}/json`,
                                   method: 'get',
                                   })
                                   .then((response) =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                       })
                               break;
   
                           case 'Distrito Federal':
                               axios({
-                                  url: `https://viacep.com.br/ws/RJ/${city}/${street}/json`,
+                                  url: `https://viacep.com.br/ws/DF/${city}/${street}/json`,
                                   method: 'get',
                                   })
                                   .then((response) =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      x.innerHTML = cep;
+                                      x.innerHTML = `Seu CEP é : ${cep}, cidade: ${city}, estado: ${state}`;
                                       })
                               break
                      
