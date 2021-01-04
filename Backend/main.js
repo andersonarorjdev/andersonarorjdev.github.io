@@ -65,7 +65,7 @@ const RecuperaPosicao = _ =>{
                                   .then((response) =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
-                                      console.log(cep);
+                                      x.innerHTML = cep;
                                   })
                               break;
   
@@ -78,6 +78,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                   })
                               break;
   
@@ -90,6 +91,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                   })
                               break;
   
@@ -102,6 +104,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                   })
                               break;
   
@@ -114,6 +117,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                   })
                               break;
   
@@ -126,6 +130,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                   })
                               break;
   
@@ -138,6 +143,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                   })
                               break;
   
@@ -150,6 +156,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                   })
                               break;
   
@@ -162,6 +169,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                   })
                               break;
   
@@ -174,6 +182,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                   })
                               break;
   
@@ -186,6 +195,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                   })
                               break;
   
@@ -198,6 +208,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                   })
                               break;
   
@@ -210,6 +221,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                   })
                               break;
   
@@ -222,6 +234,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                   })
                               break;
   
@@ -234,6 +247,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                   })
                               break;
   
@@ -246,6 +260,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                   })
                               break;
   
@@ -258,6 +273,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                       })
                               break;
   
@@ -270,6 +286,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                       })
                               break;
   
@@ -282,6 +299,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                       })
                               break;
                           
@@ -294,6 +312,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                       })
                               break;
   
@@ -306,6 +325,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                       })
                               break;
   
@@ -318,6 +338,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                       })
                               break;
   
@@ -330,6 +351,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                   })
                              break;
   
@@ -342,6 +364,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data.cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                       })
                               break;
   
@@ -354,7 +377,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
-                                      })
+                                      x.innerHTML = cep;                                    })
                               break;
   
                           case 'Tocantins':
@@ -366,6 +389,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                       })
                               break;
   
@@ -378,6 +402,7 @@ const RecuperaPosicao = _ =>{
                                       console.log(response);
                                       let cep = response.data[0].cep;
                                       console.log(cep);
+                                      x.innerHTML = cep;
                                       })
                               break
                      
