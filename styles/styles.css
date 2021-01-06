@@ -4,12 +4,8 @@
     box-sizing: border-box;
 }
 
-h1{
-    color:red;
-}
-
 #nav{
-    background-color: red;
+    background-color:#13333a;
 
     display: flex;
     flex-direction: row;
@@ -25,9 +21,58 @@ h1{
     height: 80%;
 }
 
-#city{
+#InformationsShow{
+    width: 100vw;
+    height: 100vh;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+}
+
+#x{
+    margin-top: 50px;
+}
+
+/*Media queries to responsive interface*/
+
+@media(min-width:100px) and (max-width:500px){
+    #nav{
+        width: 100vw;
+        height: 10%;
+    }
+
+    #InputSearcher{
+        width: 70%;
+        height: 45%;
+
+        border-radius: 30px;
+        border:1px solid #FFFFFF;
+
+        background-color:#13333a;
+        color:#FFFFFF;
+
+        padding:0px 0px 0px 25px;
+
+        font-size: 15px;
+    }
+
+    #ButtonSearcher{
+        height:45%;
+
+        background-color:transparent;
+        color:#FFFFFF;
+        border: 1px solid #FFFFFF;
+
+        padding:8px;
+
+        border-radius: 5px;
+    }
+
+    #ButtonSearcher:hover{
+        background-color: #FFFFFF;
+        color:#13333a;
+
+        font-weight:bolder;
+    }
 }

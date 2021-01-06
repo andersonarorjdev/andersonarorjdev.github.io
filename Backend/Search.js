@@ -1,5 +1,5 @@
 const pesquisa = _ =>{
-    let cep = document.getElementById('cep').value;
+    let cep = document.getElementById('InputSearcher').value;
         axios.get(`https://viacep.com.br/ws/${cep}/json/unicode`)
             .then((response) => {
                 /*Campos que vai ter na busca:
