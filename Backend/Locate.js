@@ -116,12 +116,19 @@ const RecuperaPosicao = _ =>{
                         let CEPTAG = document.getElementById('CEP');
                         let STREETAG = document.getElementById('STREET');
                         let CITYTAG = document.getElementById('CITY');
+                        let ButtonsCopy = document.querySelectorAll('.CopyButton');
                         let LOADINGIF = document.getElementById('LOADING');
 
-                        LOADINGIF.style.display = 'none';
-                        CEPTAG.innerHTML = cep;
-                        STREETAG.innerHTML = street;
-                        CITYTAG.innerHTML = city;
+                        for(let i = 0; i < ButtonsCopy.length; i++){
+                            LOADINGIF.style.display = 'none';
+                            ButtonsCopy[i].style.display = 'block';
+    
+                            CEPTAG.innerHTML = cep;
+                            STREETAG.innerHTML = street;
+                            CITYTAG.innerHTML = city;
+                        }
+
+
                     })
                     
                     

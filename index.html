@@ -3,19 +3,28 @@
 		<a name="top" id="top"></a>
 		<meta charset="utf-8">
 		<link rel="shortcut icon" href="./images/iconeaba.jpg" >
-		<title>GetEasyMyAdress - Descubra seus dados de forma fácil</title>
+		<title>GEMA-Descubra seus dados de forma fácil</title>
 		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 		<script src="./Backend/Locate.js"></script>
 		<script src="./Backend/Search.js"></script>
 		<link rel="stylesheet" href="./styles/styles.css">
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Montserrat:wght@500&display=swap');
-			</style> 
+		<link rel="preconnect" href="https://fonts.gstatic.com">	
+		<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Slabo+27px&display=swap" rel="stylesheet"> 
 	</head>
 	<body onload="RecuperaPosicao()">
 		<div id="nav">
-			<h1>GEMA</h1>
-			<input type="text" id="InputSearcher">
+			<img id="LOGO" src="./assets/logo/completion.gif" alt="Logo to GEMA" />
+			<div id="SearcherGroup">
+				<div id="Selects">
+					<select name="states" id="SelectStates">
+						<option value="">Estado:</option>
+					</select>
+					<select name="cities" id="SelectCities">
+						<option value="">Cidade:</option>
+					</select>
+				</div>
+				<input placeholder="digite aqui o que deseja buscar" type="text" id="InputSearcher">
+			</div>
 			<button type="submit" id="ButtonSearcher" onclick="pesquisa()">Pesquisar</button>
 		</div>
 			<div id="InformationsShow">
@@ -24,9 +33,18 @@
 					src="./assets/location.gif" 
 					alt="LOADING GIF" 
 				/>
+				<div class="SingleData">
 					<span id="CEP"></span>
+					<button class="CopyButton">Copiar</button>
+				</div>
+				<div class="SingleData">
 					<span id="CITY"></span>
+					<button class="CopyButton">Copiar</button>
+				</div>
+				<div class="SingleData">
 					<span id="STREET"></span>
+					<button class="CopyButton">Copiar</button>
+				</div>
 				</div>
 			</div>
 	</body>
