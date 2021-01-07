@@ -14,14 +14,20 @@
 	</head>
 	<body onload="RecuperaPosicao()">
 		<div id="nav">
+			<h1>GEMA</h1>
 			<input type="text" id="InputSearcher">
 			<button type="submit" id="ButtonSearcher" onclick="pesquisa()">Pesquisar</button>
 		</div>
 			<div id="InformationsShow">
-				<div id="x"></div>
-				<h1 id="CEP"></h1>
-				<h1 id="CITY"></h1>
-				<h1 id="STATE"></h1>
+				<img 
+					id="LOADING" 
+					src="./assets/location.gif" 
+					alt="LOADING GIF" 
+				/>
+					<span id="CEP"></span>
+					<span id="CITY"></span>
+					<span id="STREET"></span>
+				</div>
 			</div>
 	</body>
 </html>
