@@ -48,6 +48,10 @@ body{
     font-family: 'Prompt';
 }
 
+#InputSearcher:focus{
+    outline: none;
+}
+
 #Selects{
     margin:0px 3% 0px 0px;
 }
