@@ -151,6 +151,10 @@ body{
     height: 400px;
 }
 
+#AllowDIV{
+    display: none;
+}
+
 /*Media queries to responsive interface*/
 
 @media(max-width:450px){

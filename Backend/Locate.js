@@ -14,8 +14,7 @@ const RecuperaPosicao = _ =>{
             console.log('Recusou!');
 
             document.getElementById('LOADING').style.display = 'none';
-            document.getElementById('InformationsShow').innerHTML = 'Você Precisa habilitar!';
-               setTimeout( Reloading(), 3000);
+            document.getElementById('AllowDIV').style.display = 'block';
 
           }
       }
