@@ -1,3 +1,7 @@
+const Reloading = _ =>{
+     document.location.href = 'https://andersonarorjdev.github.io';
+}
+
 const RecuperaPosicao = _ =>{
     if (navigator.geolocation){
       navigator.geolocation.getCurrentPosition(showPosition, ErrorTakePosition);
@@ -8,6 +12,11 @@ const RecuperaPosicao = _ =>{
       const ErrorTakePosition = error =>{
           if(error.PERMISSION_DENIED){
             console.log('Recusou!');
+
+            document.getElementById('LOADING').style.display = 'none';
+            document.getElementById('InformationsShow').innerHTML = 'Você Precisa habilitar!';
+               setTimeout( Reloading(), 3000);
+
           }
       }
       const showPosition = position =>{
