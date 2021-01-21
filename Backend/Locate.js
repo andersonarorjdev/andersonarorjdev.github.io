@@ -1,8 +1,4 @@
-const Reloading = _ =>{
-     document.location.href = 'https://andersonarorjdev.github.io';
-}
-
-const RecuperaPosicao = _ =>{
+ const RecuperaPosicao = _ =>{
     if (navigator.geolocation){
       navigator.geolocation.getCurrentPosition(showPosition, ErrorTakePosition);
           }
@@ -18,11 +14,11 @@ const RecuperaPosicao = _ =>{
 
           }
       }
-      const showPosition = position =>{
+   const showPosition  = async (position) =>{
           let latitude = position.coords.latitude;
           let longitude = position.coords.longitude;
           
-          axios({
+         axios({
               url:
               `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}&zoom=18&addressdetails=1`
               ,
@@ -54,65 +50,120 @@ const RecuperaPosicao = _ =>{
                 console.log(state, city, street);
                 console.log(response);
                 
-                if(state == 'Acre'){
-                    StateSymbol = 'AC';
-                }if(state == 'Alagoas'){
+                switch (state) {
+                    case 'Acre':
+                        StateSymbol = 'AC';
+                    break;
+
+                    case 'Alagoas':
                         StateSymbol = 'AL';
-                    }if(state == 'Amapá' || state == 'Amapa'){
+                    break;
+
+                    case 'Amapá':
                         StateSymbol = 'AP';
-                    }if(state == 'Amazonas'){
+                    break;
+
+                    case 'Amazonas':
                         StateSymbol = 'AM';
-                    }if(state == 'Bahia'){
+                    break;
+
+                    case 'Bahia':
                         StateSymbol = 'BA';
-                    }if(state == 'Ceará' || 'Ceara'){
+                    break;
+
+                    case 'Ceará':
                         StateSymbol = 'CE';
-                    }if(state == 'Distrito Federal'){
+                    break;
+
+                    case 'Distrito Federal':
                         StateSymbol = 'DF';
-                    }if(state == 'Espirito Santo' || 'Espírito Santo'){
+                    break;
+
+                    case 'Espírito Santo':
                         StateSymbol = 'ES';
-                    }if(state == 'Goias' || state == 'Goiás'){
+                    break;
+
+                    case 'Goiás':
                         StateSymbol = 'GO';
-                    }if(state == 'Maranhão' ||  'Maranhao'){
+                    break;
+
+                    case 'Maranhão':
                         StateSymbol = 'MA';
-                    }if(state == 'Mato Grosso'){
+                    break;
+
+                    case 'Mato Grosso':
                         StateSymbol = 'MT';
-                    }if(state == 'Mato Grosso do Sul' || 'Mato Grosso Do Sul'){
+                    break;
+
+                    case 'Mato Grosso do Sul':
                         StateSymbol = 'MS';
-                    }if(state == 'Minas Gerais'){
+                    break;
+
+                    case 'Minas Gerais':
                         StateSymbol = 'MG';
-                    }if(state == 'Para' || state == 'Pará'){
+                    break;
+
+                    case 'Pará':
                         StateSymbol = 'PA';
-                    }if(state == 'Paraiba' || state == 'Paraíba'){
+                    break;
+
+                    case 'Paraíba':
                         StateSymbol = 'PB';
-                    }if(state == 'Paraná' || state == 'Parana'){
+                    break;
+
+                    case 'Paraná':
                         StateSymbol = 'PR';
-                    }if(state == 'Pernambuco'){
+                    break;
+
+                    case 'Pernambuco':
                         StateSymbol = 'PE';
-                    }if(state == 'Piaui' || state == 'Piauí'){
+                    break;
+
+                    case 'Piauí':
                         StateSymbol = 'PI';
-                    }if(state == 'Rio de Janeiro'){
-                        StateSymbol == 'RJ';
-                    }if(state == 'Rio Grande do Norte'){
+                    break;
+
+                    case 'Rio de Janiero':
+                        StateSymbol = 'RJ';
+                    break;
+
+                    case 'Rio Grande do Norte':
                         StateSymbol = 'RN';
-                    }if(state == 'Rio Grande do Sul'){
+                    break;
+
+                    case 'Rio Grande do Sul':
                         StateSymbol = 'RS';
-                    }if(state == 'Rondônia' || state == 'Rondonia'){
+                    break;
+
+                    case 'Rondônia':
                         StateSymbol = 'RO';
-                    }if(state == 'Roraima'){
+                    break;
+
+                    case 'Roraima':
                         StateSymbol = 'RR';
-                    }if(state == 'Santa Catarina'){
+                    break;
+
+                    case 'Santa Catarina':
                         StateSymbol = 'SC';
-                    }if(state == 'São Paulo' || state == 'Sao Paulo'){
+                    break;
+
+                    case 'São Paulo':
                         StateSymbol = 'SP';
-                    }if(state == 'Sergipe'){
+                    break;
+
+                    case 'Sergipe':
                         StateSymbol = 'SE';
-                    }if(state == 'Tocantins'){
+                    break;
+
+                    case 'Tocantins':
                         StateSymbol = 'TO';
-                    }else{
-                        console.log('Localização não encontrada!');
-                    }
-                    
-                    axios({
+                    break;
+                    default:
+                        console.log('Erro')
+                        break;
+                }
+            
+                 axios({
                         url: `https://viacep.com.br/ws/${StateSymbol}/${city}/${street}/json`,
                         method: 'get',
                     })

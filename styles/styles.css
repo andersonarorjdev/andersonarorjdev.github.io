@@ -153,6 +153,8 @@ body{
 
 #AllowDIV{
     display: none;
+    text-align: center;
+    color: red;
 }
 
 /*Media queries to responsive interface*/
