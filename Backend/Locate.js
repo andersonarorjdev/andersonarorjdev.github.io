@@ -20,20 +20,9 @@
           
          axios({
               url:
-              `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}&zoom=18&addressdetails=1`
-              ,
-              method:'get',
-              data:{
-                  format: 'json',
-                  lat:latitude,
-                  lon:longitude,
-                  addressdetails:1,
-                  'accept-language':'pt-BR'
-                }        
-            },
-            document.getElementById('LOADING').style.display = 'flex'
-            )
-            .then((response) => {
+              `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}&zoom=18&addressdetails=1`       
+            },document.getElementById('LOADING').style.display = 'flex')
+            .then((response)  => {
                 let state = response.data.address.state;
                 let city = null;
                 
@@ -164,9 +153,7 @@
                 }
             
                  axios({
-                        url: `https://viacep.com.br/ws/${StateSymbol}/${city}/${street}/json`,
-                        method: 'get',
-                    })
+                        url: `https://viacep.com.br/ws/${StateSymbol}/${city}/${street}/json`,})
                     .then((response) =>{
                         console.log(response);
                         let cep = response.data[0].cep;
