@@ -24,7 +24,7 @@
             },document.getElementById('LOADING').style.display = 'flex')
             .then((response)  => {
                 let state = response.data.address.state;
-                let city = null;
+                let city;
                 
                 if(response.data.address.town == undefined){
                     city = response.data.address.city;   
@@ -34,11 +34,16 @@
                 }
                 
                 let street = response.data.address.road;
-                let StateSymbol = null;
+                let Country = response.data.address.country;
+                let Municipality = response.data.address.municipality;
+                let region = response.data.address.region;
+
+                //Debugs
                 console.log('Ok')
-                console.log(state, city, street);
+                console.log(state, city, street, Country, Municipality, region);
                 console.log(response);
                 
+                let StateSymbol = null;
                 switch (state) {
                     case 'Acre':
                         StateSymbol = 'AC';
@@ -156,22 +161,37 @@
                         url: `https://viacep.com.br/ws/${StateSymbol}/${city}/${street}/json`,})
                     .then((response) =>{
                         console.log(response);
+
+                        let DD = response.data[0].ddd;
                         let cep = response.data[0].cep;
-                        console.log(cep);
+
+
+                        let LOADINGIF = document.getElementById('LOADING');
 
                         let CEPTAG = document.getElementById('CEP');
                         let STREETAG = document.getElementById('STREET');
                         let CITYTAG = document.getElementById('CITY');
+                        let COUNTRYTAG = document.getElementById('Country');
+                        let REGIONTAG = document.getElementById('Region');
+                        let COUNTRYREGIONTAG = document.getElementById('CountryRegion');
+                        let DDTAG = document.getElementById('DD');
+
                         let ButtonsCopy = document.querySelectorAll('.CopyButton');
-                        let LOADINGIF = document.getElementById('LOADING');
+                        
+
+
 
                         for(let i = 0; i < ButtonsCopy.length; i++){
                             LOADINGIF.style.display = 'none';
                             ButtonsCopy[i].style.display = 'block';
     
-                            CEPTAG.innerHTML = cep;
-                            STREETAG.innerHTML = street;
-                            CITYTAG.innerHTML = city;
+                            CEPTAG.innerHTML = `O seu CEP é: ${cep}.`;
+                            STREETAG.innerHTML = `Rua: ${street}.`;
+                            CITYTAG.innerHTML = `Cidade: ${city}.`;
+                            COUNTRYTAG.innerHTML = `País: ${Country}.`;
+                            REGIONTAG.innerHTML = `Região: ${region}.`;
+                            COUNTRYREGIONTAG.innerHTML = `Região do País: ${Municipality}`;
+                            DDTAG.innerHTML = `O seu DD é: (${DD}).`;
                         }
 
 

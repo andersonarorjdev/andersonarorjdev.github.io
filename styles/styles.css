@@ -119,13 +119,13 @@ body{
 }
 
 #InformationsShow{
-    height: 70%;
+    height:70%;
     width:85%;
 
     display: flex;
     flex-direction: column;
     align-items:center;
-    justify-content:flex-start;
+    justify-content:space-around;
 
     margin-top:3%;
 
@@ -134,18 +134,42 @@ body{
     background-color: #FFFFFF;
 }
 
+.CopyButton{
+    width: 90px;
+    height: 35px;
+    border:none;
+    border-radius: 30px;
+    background-color: rgb(150, 53, 53);
+
+    color:white;
+}
+
+.CopyButton:hover{
+    background-color: sandybrown;
+    color:snow;
+    font-weight: bolder;
+}
+
+.CopyButton:focus{
+    outline: none;
+}
+
 .SingleData{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
-    width:70%;
+    width:95%;
+
+    font-family:'Slabo 27px';
+    color: rgb(26, 25, 25);
 }
 
 .SingleData > button{
     display: none;
 }
+
 #LOADING{
     width: 240px;
     height: 400px;
