@@ -13,24 +13,13 @@
 		<script src="./Backend/Locate.js"></script>
 		<script src="./Backend/Search.js"></script>
 		<link rel="stylesheet" href="./styles/styles.css">
+		<link rel="stylesheet" href="./styles/media-queries.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">	
 		<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Slabo+27px&display=swap" rel="stylesheet"> 
 	</head>
 	<body onload="RecuperaPosicao()">
 		<div id="nav">
 			<img id="LOGO" src="./assets/logo/completion.gif" alt="Logo to GEMA" />
-			<div id="SearcherGroup">
-				<div id="Selects">
-					<select name="states" id="SelectStates">
-						<option value="">Estado:</option>
-					</select>
-					<select name="cities" id="SelectCities">
-						<option value="">Cidade:</option>
-					</select>
-				</div>
-				<input placeholder="digite aqui o que deseja buscar" type="text" id="InputSearcher">
-			</div>
-			<button type="submit" id="ButtonSearcher" onclick="pesquisa()">Pesquisar</button>
 		</div>
 			<div id="InformationsShow">
 				<div id="AllowDIV">

@@ -19,7 +19,7 @@ body{
 #nav{
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content:center;
     align-items: center;
 
     height:auto;
@@ -28,94 +28,6 @@ body{
 
 #LOGO{
     height:90px;
-}
-
-#InputSearcher{
-    width: 50%;
-    height: 50%;
-    font-size: 20px;
-    
-    padding:5px 0px 5px 25px;
-    
-    border-bottom:1px solid #627b78;
-    border-top:none;
-    border-right: none;
-    border-left: none;
-    
-    background-color: #425C5A;
-    color:#FFFFFF;
-
-    font-family: 'Prompt';
-}
-
-#InputSearcher:focus{
-    outline: none;
-}
-
-#Selects{
-    margin:0px 3% 0px 0px;
-}
-
-#SearcherGroup{
-    width: 60%;
-
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-}
-
-#SelectCities{
-    background-color: #ffcea1;
-    color:#425C5A;
-
-    border:0px solid;
-    border-radius:7px;
-
-    font-size: 13px;
-    font-weight: bolder;
-
-    padding:15px 15px;
-
-    -webkit-appearance: none; 
-    -moz-appearance: none; 
-    appearance: none; /* Remove estilo padrão do FireFox*/   
-}
-
-#SelectStates{
-    background-color: #ffcea1;
-    color:#425C5A;
-
-    border:0px solid;
-    border-radius:7px;
-
-    font-size: 13px;
-    font-weight: bolder;
-
-    padding:15px 15px;
-    -webkit-appearance: none; 
-    -moz-appearance: none; 
-    appearance: none; /* Remove estilo padrão do FireFox*/ 
-}
-
-#ButtonSearcher{
-    background-color:#ffcea1;
-    color:#425C5A;
-    border:0px solid;
-
-    padding:15px 30px;
-    
-    border-radius: 40px;
-
-    font-weight:bolder;
-    margin-top: 10px;
-
-    margin-top: 1.5%;
-}
-
-#ButtonSearcher:hover{
-    background-color: #5c7775;
-    color:#13333a;
-
 }
 
 #InformationsShow{
@@ -179,30 +91,4 @@ body{
     display: none;
     text-align: center;
     color: red;
-}
-
-/*Media queries to responsive interface*/
-
-@media(max-width:450px){
-    #nav{
-        width: 100vw;
-        height: 10%;
-        justify-content: space-between;
-    }
-
-    #InputSearcher{
-        width: 70%;
-        height: 45%;
-
-
-        font-size: 15px;
-    }
-
-    #ButtonSearcher{
-        height:45%;
-    }
-
-    #ButtonSearcher:hover{
-     
-    }
 }
