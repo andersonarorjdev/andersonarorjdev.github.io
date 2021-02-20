@@ -1,0 +1,98 @@
+#HomeContainer{
+
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+}
+
+#PicText{
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#SocialLanguage{
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#ProfilePic{
+    align-self: flex-end;
+    margin:0px 0px 40px 90px;
+}
+
+
+#TextHome{
+    width:400px;
+
+    padding:0px 0px 10px 0px;
+    border-bottom: 1px solid #5E17EB;
+}
+
+#TextHome > p {
+    font-family: 'Fira Code';
+}
+
+#TextHome > p > span{
+    color:#5E17EB;
+}
+
+#SocialIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#SocialIcons > a > img{
+    width: 45px;
+    height:auto;
+
+    background-color: #5E17EB;
+    border-radius: 50%;
+
+    padding:3px;
+}
+
+#SocialIcons > a:nth-child(2) >img{
+    border-radius: 36%;
+}
+
+#SocialIcons > a{
+    margin:0px 10px;
+}
+
+#ChooseLanguage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#ChooseLanguage > div > h4{
+    text-align: center;
+}
+
+#LanguageButtons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.LanguageButton{
+    background-color:transparent;
+    border:none;
+}
+
+
+.Flags{
+    width: 40px;
+    height: auto;
+}
