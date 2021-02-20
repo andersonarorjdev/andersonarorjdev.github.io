@@ -1,0 +1,31 @@
+span{
+    padding: 0px 40px;
+}
+
+.Links{
+    text-decoration:none;
+}
+
+.linksMenu{
+    font-size: 19px;
+
+    border-bottom: 4px solid #5E17EB;
+    padding:0px 0px 2px 0px;
+}
+
+#logoMain{
+    font-family: 'Anonymous Pro';
+    font-weight: bolder;
+    font-size: 35.2px;
+
+    color:#5E17EB;
+}
+
+#logoSub{
+    text-align: center;
+    font-size: 21px;
+    font-weight: bolder;
+
+    position: relative;
+    left: 40px;
+}

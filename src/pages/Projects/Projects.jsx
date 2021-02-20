@@ -1,8 +1,13 @@
 import React from 'react';
 
+import Navbar from '../../components/navbar/navbar';
+
 const Projects = props =>{
     return(
-        <h1>Projects</h1>
+        <>
+            <Navbar />
+            <h1>Projects</h1>
+        </>
     );
 }
 
