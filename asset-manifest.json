@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/static/js/main.1224cf2f.chunk.js",
-    "main.js.map": "/static/js/main.1224cf2f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b707d232.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b707d232.js.map",
-    "static/js/2.b3ad364e.chunk.js": "/static/js/2.b3ad364e.chunk.js",
-    "static/js/2.b3ad364e.chunk.js.map": "/static/js/2.b3ad364e.chunk.js.map",
-    "static/js/3.0f141457.chunk.js": "/static/js/3.0f141457.chunk.js",
-    "static/js/3.0f141457.chunk.js.map": "/static/js/3.0f141457.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.b3ad364e.chunk.js.LICENSE.txt": "/static/js/2.b3ad364e.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg"
+    "main.css": "/andersonarorjdev.github.io/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/andersonarorjdev.github.io/static/js/main.72d231d2.chunk.js",
+    "main.js.map": "/andersonarorjdev.github.io/static/js/main.72d231d2.chunk.js.map",
+    "runtime-main.js": "/andersonarorjdev.github.io/static/js/runtime-main.cc8b48a0.js",
+    "runtime-main.js.map": "/andersonarorjdev.github.io/static/js/runtime-main.cc8b48a0.js.map",
+    "static/js/2.b3ad364e.chunk.js": "/andersonarorjdev.github.io/static/js/2.b3ad364e.chunk.js",
+    "static/js/2.b3ad364e.chunk.js.map": "/andersonarorjdev.github.io/static/js/2.b3ad364e.chunk.js.map",
+    "static/js/3.0f141457.chunk.js": "/andersonarorjdev.github.io/static/js/3.0f141457.chunk.js",
+    "static/js/3.0f141457.chunk.js.map": "/andersonarorjdev.github.io/static/js/3.0f141457.chunk.js.map",
+    "index.html": "/andersonarorjdev.github.io/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/andersonarorjdev.github.io/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.b3ad364e.chunk.js.LICENSE.txt": "/andersonarorjdev.github.io/static/js/2.b3ad364e.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/andersonarorjdev.github.io/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b707d232.js",
+    "static/js/runtime-main.cc8b48a0.js",
     "static/js/2.b3ad364e.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.1224cf2f.chunk.js"
+    "static/js/main.72d231d2.chunk.js"
   ]
 }
