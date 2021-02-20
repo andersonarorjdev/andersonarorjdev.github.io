@@ -1,0 +1,42 @@
+#TextAbout > p{
+    width: 400px;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Fira Code';
+}
+
+#TextAbout > p > span{
+    color:#5e17eb;
+    font-weight: bolder;
+}
+
+#TechsDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+#TechsDiv > h1{
+    color:#5e17eb;
+    border-bottom: 2px solid #5e17eb;
+    padding: 0px 0px 4px 0px;
+}
+
+#Techs{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+}
+
+#Techs > img{
+    margin:0px 5px;
+}
+
+.TechsIcons{
+    width: 50px;
+    height: auto;
+}

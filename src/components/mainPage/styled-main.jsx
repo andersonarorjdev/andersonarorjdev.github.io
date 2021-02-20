@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MainTAG = styled.main`
-    height:76vh;
+    height:73vh;
     max-height:77vh;
 
  

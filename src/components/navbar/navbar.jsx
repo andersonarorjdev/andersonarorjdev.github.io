@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import {NavbarTag, menuNavbar} from './styedNavbar';
 import './navbar.css';
 import {Logo, sublogo} from './logo';
+import './border';
 
 
 const Navbar = props =>{
