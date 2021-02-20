@@ -13,6 +13,14 @@ span{
     padding:0px 0px 2px 0px;
 }
 
+.linksMenu:hover{
+    background-color: #5E17EB;
+    transition: 0.5s;
+    font-weight: bolder;
+
+    padding:4px;
+}
+
 #logoMain{
     font-family: 'Anonymous Pro';
     font-weight: bolder;
