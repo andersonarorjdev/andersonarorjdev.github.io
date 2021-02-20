@@ -1,9 +1,0 @@
-@media (min-width:100px) and (max-width: 768px){
-    #nav{
-        height:25vh;
-    }
-
-    #InformationsShow{
-        height: 100vh;
-    }
-}
