@@ -33,10 +33,9 @@ const Projects = props =>{
                                 <h1>{project.name}</h1>
                                 <img src={Github} alt="Github" />
                                 <p>{project.description}</p>
-                                <a href={project.url}>Acesse o projeto</a>
+                                <a href={project.html_url} target="blank">Acesse o projeto</a>
                             </Card>
                             ))
-                           
                        }
                    </ProjectsContainer>
                 </Main>

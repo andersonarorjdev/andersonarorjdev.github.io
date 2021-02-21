@@ -26,19 +26,19 @@ const Contact = props =>{
                         </div>
 
                         <div id="LinksSection">
-                            <a href="https://www.github.com/andersonarojdev">
+                            <a href="https://www.github.com/andersonarorjdev" target="blank">
                                 <div className="CardIcon">
                                     <img className="ContactIcons" src={Github} alt="GitHib"/>
                                     <span className="Texts">Github</span>
                                 </div>
                             </a>
-                            <a href="https://linkedin.com/in/andersonarojdev">
+                            <a href="https://linkedin.com/in/andersonarorjdev" target="blank">
                                 <div className="CardIcon">
                                     <img className="ContactIcons" src={Linkedin} alt="Linkedin"/>
                                     <span className="Texts">Linkedin</span>
                                 </div>
                             </a>
-                            <a href="https://instagram.com/andersonarorjdev">
+                            <a href="https://instagram.com/andersonarorjdev" target="blank">
                                 <div className="CardIcon">
                                     <img className="ContactIcons" src={Instagram} alt="Instagram"/>
                                     <span className="Texts">Instagram</span>
@@ -50,7 +50,7 @@ const Contact = props =>{
                                     <span className="Texts">Email</span>
                                 </div>
                             </a>
-                            <a href="https://www.behance.net/andersonjuniorarorj">
+                            <a href="https://www.behance.net/andersonjuniorarorj" target="blank">
                                 <div className="CardIcon">
                                     <img className="ContactIcons" src={Behance} alt="Behance"/>
                                     <span className="Texts">Behance</span>
