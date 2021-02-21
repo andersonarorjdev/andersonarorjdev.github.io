@@ -1,23 +1,32 @@
 {
   "files": {
-    "main.css": "/andersonarorjdev.github.io/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/andersonarorjdev.github.io/static/js/main.72d231d2.chunk.js",
-    "main.js.map": "/andersonarorjdev.github.io/static/js/main.72d231d2.chunk.js.map",
-    "runtime-main.js": "/andersonarorjdev.github.io/static/js/runtime-main.cc8b48a0.js",
-    "runtime-main.js.map": "/andersonarorjdev.github.io/static/js/runtime-main.cc8b48a0.js.map",
-    "static/js/2.b3ad364e.chunk.js": "/andersonarorjdev.github.io/static/js/2.b3ad364e.chunk.js",
-    "static/js/2.b3ad364e.chunk.js.map": "/andersonarorjdev.github.io/static/js/2.b3ad364e.chunk.js.map",
-    "static/js/3.0f141457.chunk.js": "/andersonarorjdev.github.io/static/js/3.0f141457.chunk.js",
-    "static/js/3.0f141457.chunk.js.map": "/andersonarorjdev.github.io/static/js/3.0f141457.chunk.js.map",
-    "index.html": "/andersonarorjdev.github.io/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/andersonarorjdev.github.io/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.b3ad364e.chunk.js.LICENSE.txt": "/andersonarorjdev.github.io/static/js/2.b3ad364e.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/andersonarorjdev.github.io/static/media/logo.6ce24c58.svg"
+    "main.css": "/static/css/main.1dcab641.chunk.css",
+    "main.js": "/static/js/main.bd969c2a.chunk.js",
+    "main.js.map": "/static/js/main.bd969c2a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c67d713e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c67d713e.js.map",
+    "static/js/2.60bd044f.chunk.js": "/static/js/2.60bd044f.chunk.js",
+    "static/js/2.60bd044f.chunk.js.map": "/static/js/2.60bd044f.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.1dcab641.chunk.css.map": "/static/css/main.1dcab641.chunk.css.map",
+    "static/js/2.60bd044f.chunk.js.LICENSE.txt": "/static/js/2.60bd044f.chunk.js.LICENSE.txt",
+    "static/media/BrazilFlag.a35a27bb.png": "/static/media/BrazilFlag.a35a27bb.png",
+    "static/media/Laravel.8b2939ca.png": "/static/media/Laravel.8b2939ca.png",
+    "static/media/Profile.be2dcdaf.png": "/static/media/Profile.be2dcdaf.png",
+    "static/media/css.36b2d80f.png": "/static/media/css.36b2d80f.png",
+    "static/media/emai.a3cff553.png": "/static/media/emai.a3cff553.png",
+    "static/media/html.397540de.png": "/static/media/html.397540de.png",
+    "static/media/nodejs.146f78e6.png": "/static/media/nodejs.146f78e6.png",
+    "static/media/php.c67d24b4.png": "/static/media/php.c67d24b4.png",
+    "static/media/react.73ac128a.png": "/static/media/react.73ac128a.png",
+    "static/media/reactnative.13fd6a95.png": "/static/media/reactnative.13fd6a95.png",
+    "static/media/redux.010fcccb.jpg": "/static/media/redux.010fcccb.jpg",
+    "static/media/typescript.a93c689e.png": "/static/media/typescript.a93c689e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.cc8b48a0.js",
-    "static/js/2.b3ad364e.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.72d231d2.chunk.js"
+    "static/js/runtime-main.c67d713e.js",
+    "static/js/2.60bd044f.chunk.js",
+    "static/css/main.1dcab641.chunk.css",
+    "static/js/main.bd969c2a.chunk.js"
   ]
 }
