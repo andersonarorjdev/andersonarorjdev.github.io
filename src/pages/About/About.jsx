@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import Navbar from '../../components/navbar/navbar';
 import Main from '../../components/mainPage/mainPage';
@@ -6,6 +6,9 @@ import Footer from '../../components/footer/Footer';
 
 import {AboutContainer} from './styled-About';
 import './About.css';
+
+import BrazilFlag from '../../assets/BrazilFlag.png';
+import USAFlag from '../../assets/UsaFlag.png';
 
 import Bootstrap from '../../assets/bootstrap.png';
 import CSS from '../../assets/css.png';
@@ -20,7 +23,18 @@ import ReactNativeIMG from '../../assets/reactnative.png';
 import Redux from '../../assets/redux.jpg';
 import Typescript from '../../assets/typescript.png';
 
+import Texts from '../../texts/about.json';
+
+let Portuguese = Texts.portuguese;
+let English = Texts.english;
+
 const About = props =>{
+
+    const[language, setLanguage] = useState(Portuguese);
+
+    const setToEnglish = props => setLanguage(English);
+    const setToPortuguese = props => setLanguage(Portuguese);
+
     return(
         <>
             <Navbar />
@@ -29,15 +43,18 @@ const About = props =>{
                         <div id="TextAbout">
                             <p>
                                 <span>Hello World! 0 ou 1?</span> <br />
-                                Estudo á área de Desenvolvimento de
-                                Software á aproximadamente 1,5 anos.
-                                Ao longo dessa incrível tragetória,
-                                consegui aprender como que a internet
-                                e o mundo da tecnologia funciona para
-                                manter cada vez mais as pessoas conectadas.
+                                            {language}
                             </p>
-                        </div>
+                            <div id="Buttons">
+                                <button onClick={setToEnglish}>
+                                    <img src={USAFlag} alt=""/>
+                                </button>
 
+                                <button onClick={setToPortuguese}>
+                                    <img src={BrazilFlag} alt=""/>
+                                </button>
+                            </div>
+                        </div>
                         <div id="TechsDiv">
                             <h1>Techs</h1>
                             <div id="Techs">

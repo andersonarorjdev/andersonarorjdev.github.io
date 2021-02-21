@@ -10,6 +10,17 @@
     font-weight: bolder;
 }
 
+#Buttons > button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#Buttons > button > img{
+    width: 40px;
+    height: 40px;
+}
+
 #TechsDiv{
     display: flex;
     flex-direction: column;

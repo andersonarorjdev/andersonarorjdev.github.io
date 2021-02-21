@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 import Navbar from '../../components/navbar/navbar';
 import Main from '../../components/mainPage/mainPage';
@@ -14,7 +14,23 @@ import USAFlag from '../../assets/UsaFlag.png';
 import {} from './styled-Home';
 import './home.css';
 
+import Text from '../../texts/home.json';
+
+let Portuguese = Text.portugues;
+let English = Text.english;
+
 const Home = props =>{
+
+    const[languague, setLanguge] = useState(Portuguese);
+  
+        const ChangeLanguageEnglish = props =>{
+            setLanguge(English);
+        }
+
+        const ChangeLanguagePortuguese = props =>{
+            setLanguge(Portuguese);
+        }
+
     return(
         <>
             <Navbar />
@@ -28,11 +44,7 @@ const Home = props =>{
                             <div id="TextHome">
                                 <p>
                                     <span>Hello World! 0 ou 1?</span> <br />
-                                Me chamo Anderson, sou desenvolvedor
-                                Fullstack, com mais experiência em
-                                frontend.
-                                Estou no 2 ano de Análise e Desenvolvimento
-                                de Sistemas.
+                                    {languague}
                                 </p>
                             </div>
                         </div>
@@ -55,10 +67,10 @@ const Home = props =>{
                                     <h5>Change the language below</h5>
                                 </div>
                                 <div id="LanguageButtons">
-                                    <button class="LanguageButton">
+                                    <button class="LanguageButton" onClick={ChangeLanguagePortuguese}>
                                         <img class="Flags" src={BrazilFlag} alt="Brazil Flag"/>
                                     </button>
-                                    <button class="LanguageButton">
+                                    <button class="LanguageButton" onClick={ChangeLanguageEnglish}>
                                         <img class="Flags" src={USAFlag} alt="Usa Flag"/>
                                     </button>
                                 </div>
