@@ -39,8 +39,8 @@ export const Card = styled.div`
 
     p{
         text-align:center;
-        font-family:'Anonymous Pro';
-        font-size:16px;
+        font-family:'Fira Code';
+        font-size:13px;
     }
 
     a{
@@ -50,7 +50,5 @@ export const Card = styled.div`
 
         position:relative;
         bottom:10px;
-
-        text-decoration:underline;
     }
 `;
