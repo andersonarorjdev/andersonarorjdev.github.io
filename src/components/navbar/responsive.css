@@ -1,0 +1,21 @@
+@media(min-width:932px) and (max-width:1004px){
+    #logoMain{
+       font-size: 28px;
+    }
+    
+    #logoSub{
+       font-size: 18px;
+       left: 30px;
+    }
+}
+
+@media (min-width:600px) and (max-width:932px){
+    #logoMain{
+        font-size: 24px;
+     }
+     
+     #logoSub{
+        font-size: 16px;
+        left: 25px;
+     }
+}

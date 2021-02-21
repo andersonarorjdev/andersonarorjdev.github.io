@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 
 import Navbar from '../../components/navbar/navbar';
 import Main from '../../components/mainPage/mainPage';
@@ -11,7 +11,6 @@ import Linkedin from '../../assets/linkedin.png';
 import BrazilFlag from '../../assets/BrazilFlag.png';
 import USAFlag from '../../assets/UsaFlag.png';
 
-import {} from './styled-Home';
 import './home.css';
 
 import Text from '../../texts/home.json';

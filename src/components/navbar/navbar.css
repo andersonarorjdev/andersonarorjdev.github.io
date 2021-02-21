@@ -1,7 +1,3 @@
-span{
-    padding: 0px 40px;
-}
-
 .Links{
     text-decoration:none;
 }
@@ -10,7 +6,20 @@ span{
     font-size: 19px;
 
     border-bottom: 4px solid #5E17EB;
-    padding:0px 0px 2px 0px;
+    padding:0px 0px 5px 0px;
+}
+
+#MenuNavbar > span{
+    padding: 0px 40px;
+}
+
+#ButtonMenu{
+    width: 35px;
+    height: auto;
+}
+
+#ButtonClose{
+    background-color: violet;
 }
 
 .linksMenu:hover{
