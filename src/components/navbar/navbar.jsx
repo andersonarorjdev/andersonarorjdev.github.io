@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-import {NavbarTag, menuNavbar} from './styedNavbar';
+import {NavbarTag, MenuNavbar} from './styedNavbar';
 import './navbar.css';
 import {Logo, sublogo} from './logo';
 import './border';
@@ -17,7 +17,7 @@ const Navbar = props =>{
                     <span id="logoSub">{sublogo}</span>
                 </Link>
             </span>
-               <menuNavbar>
+               <MenuNavbar>
                    <span>
                         <Link className="Links linksMenu" to="/projects">Projects</Link>
                    </span>
@@ -27,7 +27,7 @@ const Navbar = props =>{
                    <span>
                         <Link className="Links linksMenu" to="/contact">Contact</Link>
                    </span>
-               </menuNavbar>
+               </MenuNavbar>
         </NavbarTag>
     );
 }

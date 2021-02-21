@@ -1,2 +1,2 @@
-const baseURL = 'https://api.github.com/users/andersonarorjdev';
-export default baseURL;
+const URL = 'https://api.github.com/users/andersonarorjdev/repos';
+export default URL;

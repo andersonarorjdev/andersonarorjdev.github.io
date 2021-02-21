@@ -15,8 +15,8 @@ export const ProjectsContainer = styled.section`
 `;
 
 export const Card = styled.div`
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 230px;
 
     background-color:#5E17EB;
     border-radius: 20px;
@@ -33,9 +33,24 @@ export const Card = styled.div`
         height:auto;
     }
 
+    h1{
+        font-size:13px;
+    }
+
     p{
         text-align:center;
-        font-family:'Fira Code';
-        font-size:13px;
+        font-family:'Anonymous Pro';
+        font-size:16px;
+    }
+
+    a{
+        font-weight:bolder;
+        font-family:'Anonymous Pro';
+        font-size:14px;
+
+        position:relative;
+        bottom:10px;
+
+        text-decoration:underline;
     }
 `;
