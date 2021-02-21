@@ -26,32 +26,31 @@ const Contact = props =>{
                         </div>
 
                         <div id="LinksSection">
-                            <a href="">
+                            <a href="https://www.github.com/andersonarojdev">
                                 <div className="CardIcon">
                                     <img className="ContactIcons" src={Github} alt="GitHib"/>
                                     <span className="Texts">Github</span>
                                 </div>
                             </a>
-                            <a href="">
+                            <a href="https://linkedin.com/in/andersonarojdev">
                                 <div className="CardIcon">
                                     <img className="ContactIcons" src={Linkedin} alt="Linkedin"/>
                                     <span className="Texts">Linkedin</span>
                                 </div>
                             </a>
-                            <a href="">
+                            <a href="https://instagram.com/andersonarorjdev">
                                 <div className="CardIcon">
                                     <img className="ContactIcons" src={Instagram} alt="Instagram"/>
                                     <span className="Texts">Instagram</span>
                                 </div>
                             </a>
-
-                            <a href="">
+                            <a href="mailto:anderson.r.o.r.jr@gmail.com?subject=Hello Anderson">
                                 <div className="CardIcon">
                                     <img className="ContactIcons" src={Email} alt="Email"/>
                                     <span className="Texts">Email</span>
                                 </div>
                             </a>
-                            <a href="">
+                            <a href="https://www.behance.net/andersonjuniorarorj">
                                 <div className="CardIcon">
                                     <img className="ContactIcons" src={Behance} alt="Behance"/>
                                     <span className="Texts">Behance</span>
