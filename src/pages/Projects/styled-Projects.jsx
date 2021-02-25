@@ -19,8 +19,8 @@ export const ProjectsContainer = styled.section`
 `;
 
 export const Card = styled.div`
-    width: 200px;
-    height: 230px;
+    width: 220px;
+    height: 260px;
 
     background-color:#5E17EB;
     border-radius: 20px;

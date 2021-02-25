@@ -18,6 +18,7 @@ const Projects = props =>{
             url:api,
             method: 'get'
         }).then((response) => {
+            console.log(response);
             setProjects(response.data);
         })
     },[])
@@ -29,10 +30,11 @@ const Projects = props =>{
                    <ProjectsContainer>
                        {  
                             Projects.map(project =>(
-                            <Card>
+                            <Card key={project.id}>
                                 <h1>{project.name}</h1>
                                 <img src={Github} alt="Github" />
                                 <p>{project.description}</p>
+                                <h5>{project.language}</h5>
                                 <a href={project.html_url} target="blank">Acesse o projeto</a>
                             </Card>
                             ))
