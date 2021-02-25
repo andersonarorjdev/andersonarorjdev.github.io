@@ -42,7 +42,7 @@ const Home = props =>{
 
                             <div id="TextHome">
                                 <p>
-                                    <span>Hello World! 0 ou 1?</span> <br />
+                                    <span>Hello World! 0 ou 1?</span> <br /><br/>
                                     {languague}
                                 </p>
                             </div>

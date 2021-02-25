@@ -4,6 +4,7 @@
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     height: 100%;
 }
@@ -14,6 +15,7 @@
 
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -28,7 +30,7 @@
 
 #ProfilePic{
     align-self: flex-end;
-    margin:0px 0px 40px 90px;
+    margin:0px 0px 100px 90px;
 }
 
 
@@ -96,4 +98,61 @@
 .Flags{
     width: 40px;
     height: auto;
+}
+
+@media(max-width:730px){
+
+    #SocialLanguage{    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #ProfilePic{
+        align-self: flex-end;
+        margin:0px 50vw 20px 50vw;
+    }
+    
+    #TextHome{
+        width:80vw;
+        text-align: center;
+        border-bottom: 1px solid #5E17EB;
+    }
+    
+    #TextHome > p {
+        font-family: 'Anonymous Pro';
+        font-size: 16px;
+    }
+    
+    #TextHome > p > span{
+        margin:0px 0px 30px 0px;
+    }
+       
+    #SocialIcons > a > img{    
+        padding:2.50px;
+    }
+    
+    #SocialIcons > a{
+        margin:10px 5px 0px 5px;
+    }
+    
+    #ChooseLanguage > div > h4{
+        display:none;
+    }
+
+    #ChooseLanguage > div > h5{
+        text-align: center;
+    }
+    
+    #LanguageButtons{
+        display: flex;
+        justify-content:center;
+        margin:0px 0px 10px 0px;
+    }
+    
+    .Flags{
+        width: 35px;
+        height: auto;
+        margin:0px 10px;
+    }
 }
