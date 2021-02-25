@@ -18,11 +18,11 @@ export const NavbarTag = styled.nav`
         padding:0px 60px;
     }
 
-    @media(max-width:470px){
-        padding:0px 20px;
+    @media(max-width:460px){
+        padding:0px 40px;
     }
 
-    @media(max-width:320px){
+    @media(max-width:330px){
         padding:0px 5px;
     }
 `;
