@@ -16,7 +16,7 @@
 <h3>This is my first personal website and i loved this result.💜</h3>
 
 <p align="center">
-    <img src="./src/screen/Print.png"  alt="Anderson' s home website"/>
+    <img src="./src/screen/Mockup.png"  alt="Anderson' s home website"/>
 </p>
 
 ***
