@@ -10,6 +10,21 @@ export const NavbarTag = styled.nav`
 
     padding:0px 130px;
 
+    @media(max-width:700px){
+        padding:0px 100px;
+    }
+
+    @media(max-width:550px){
+        padding:0px 60px;
+    }
+
+    @media(max-width:470px){
+        padding:0px 20px;
+    }
+
+    @media(max-width:320px){
+        padding:0px 5px;
+    }
 `;
 
 export const MenuNavbar = styled.div`

@@ -7,6 +7,7 @@ import './navbar.css';
 import './responsive.css';
 import {Logo, sublogo} from './logo';
 import ButtonIcon from '../../assets/menu.svg';
+import CloseButton from '../../assets/cancel.svg';
 
 const Navbar = props =>{
 
@@ -51,7 +52,7 @@ const Navbar = props =>{
             </MobileMenuButton>
             <MobileMenu>
                 <MobileMenuButton id="ButtonClose" onClick={() => {setMobilemenu(!menuMobile)}} show="991px">
-                    <img id="ButtonMenu" src={ButtonIcon} alt="Menu"/>
+                    <img id="ButtonMenu" src={CloseButton} alt="Close Button"/>
                 </MobileMenuButton>
                 <span>
                     <Link className="Links linksMenu" to="/projects">Projects</Link>
