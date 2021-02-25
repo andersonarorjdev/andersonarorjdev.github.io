@@ -55,3 +55,36 @@ a{
     width: 40px;
     height: auto;
 }
+
+@media(max-width:800px){
+    #ProfileSection > img{
+        width: 150px;
+        height: auto;
+
+        margin-top:50px;
+    }
+
+    #LinksSection{
+        width:100%;
+        height: 100%;
+    
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: flex-start; 
+    }
+    
+    .CardIcon{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    
+        width: 240px;
+        height: 50px;
+    
+        margin: 10px 10px;
+    
+        background-color: #5e17eb;
+    }
+}
