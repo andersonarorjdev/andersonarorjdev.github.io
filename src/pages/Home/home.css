@@ -89,6 +89,10 @@
     justify-content: space-around;
 }
 
+#LanguageButtons > button{
+    outline: none;
+}
+
 .LanguageButton{
     background-color:transparent;
     border:none;
@@ -148,6 +152,7 @@
         display: flex;
         justify-content:center;
         margin:0px 0px 10px 0px;
+
     }
     
     .Flags{
