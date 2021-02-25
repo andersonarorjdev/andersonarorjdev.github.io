@@ -13,7 +13,7 @@
 </p>
 
 
-<h3>This is my first personal website and i loved this result.💜</h3>
+<h3 align="center">This is my first personal website and i loved this result.💜</h3>
 
 <p align="center">
     <img src="./src/screen/Mockup.png"  alt="Anderson' s home website"/>
@@ -21,7 +21,7 @@
 
 ***
 
-###Wanna see? Click 👇
+<h3 align="center">Wanna see? Click 👇<h3>
 
 <p align="center">
     <a style="color:blueviolet; font-weight:bolder; text-decoration:underline;" href="https://andersonarorjdev.github.io/"> CLICK HERE TO ACESS</a>
