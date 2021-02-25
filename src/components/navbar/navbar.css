@@ -18,10 +18,6 @@
     height: auto;
 }
 
-#ButtonClose{
-    background-color: violet;
-}
-
 .linksMenu:hover{
     background-color: #5E17EB;
     transition: 0.5s;

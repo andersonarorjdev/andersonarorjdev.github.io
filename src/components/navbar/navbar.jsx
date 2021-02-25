@@ -16,12 +16,13 @@ const Navbar = props =>{
     const MobileMenu = styled.div`
         display:${menuMobile ? 'flex' : 'none'};
         flex-direction:column;
-        background-color:red;
+        background-color:#000000;
+        justify-content:space-between;
         position:absolute;
         top:0;
         right:0;
-        min-height:100%;
-        min-width:40vw;
+        min-height:50vh;
+        min-width:50vw;
 
         padding:20px;
   `;
@@ -54,6 +55,9 @@ const Navbar = props =>{
                 <MobileMenuButton id="ButtonClose" onClick={() => {setMobilemenu(!menuMobile)}} show="991px">
                     <img id="ButtonMenu" src={CloseButton} alt="Close Button"/>
                 </MobileMenuButton>
+                <span>
+                    <Link className="Links linksMenu" to="/">Home</Link>
+                </span>
                 <span>
                     <Link className="Links linksMenu" to="/projects">Projects</Link>
                 </span>
