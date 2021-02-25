@@ -9,9 +9,13 @@ export const ProjectsContainer = styled.section`
     justify-content:center;
     flex-wrap: wrap;
 
-    padding:0px 200px;
+    padding:0px 0px;
 
     overflow-y:scroll;
+
+    @media(min-width:800px){
+        padding:0px 150px;
+    }
 `;
 
 export const Card = styled.div`
@@ -51,4 +55,6 @@ export const Card = styled.div`
         position:relative;
         bottom:10px;
     }
+
+    
 `;
