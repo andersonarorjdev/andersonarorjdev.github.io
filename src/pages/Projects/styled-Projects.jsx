@@ -44,16 +44,22 @@ export const Card = styled.div`
     p{
         text-align:center;
         font-family:'Fira Code';
-        font-size:13px;
+        font-size:12px;
     }
 
     a{
         font-weight:bolder;
         font-family:'Anonymous Pro';
-        font-size:14px;
+        font-size:13px;
 
         position:relative;
         bottom:10px;
+    }
+
+    a:hover{
+        background-color:#FFFFFF;
+        color:#5E17EB;
+        padding:2px;
     }
 
     

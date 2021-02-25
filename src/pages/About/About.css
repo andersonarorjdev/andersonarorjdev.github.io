@@ -1,5 +1,5 @@
 #TextAbout > p{
-    width: 400px;
+    width:400px;
     text-align: center;
     font-size: 17px;
     font-family: 'Fira Code';
@@ -14,6 +14,7 @@
     background-color: transparent;
     border: none;
     outline: none;
+    padding:0px 10px;
 }
 
 #Buttons > button > img{
@@ -40,6 +41,7 @@
     display: flex;
     align-items: center;
     justify-content:center;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -50,4 +52,21 @@
 .TechsIcons{
     width: 45px;
     height: auto;
+}
+
+@media(max-width:500px){
+    #TextAbout > p{
+        width:85vw;
+        font-size:15px;
+    }
+
+    #Buttons > button{
+        padding:0px 10px;
+    }
+    
+    #Buttons > button > img{
+        width: 40px;
+        height: 40px;
+    }
+    
 }

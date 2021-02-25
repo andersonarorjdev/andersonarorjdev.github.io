@@ -42,7 +42,7 @@ const About = props =>{
                     <AboutContainer>
                         <div id="TextAbout">
                             <p>
-                                <span>Hello World! 0 ou 1?</span> <br />
+                                <span>Hello World! 0 ou 1?</span><br /><br />
                                             {language}
                             </p>
                             <div id="Buttons">

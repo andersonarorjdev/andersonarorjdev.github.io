@@ -7,7 +7,7 @@ export const AboutContainer = styled.section`
     justify-content:space-between;
     align-items:center;
 
-    padding:60px 0px;
+    padding:15vh 0px;
 
     height:100%;
 `;
