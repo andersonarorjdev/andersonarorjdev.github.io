@@ -66,6 +66,10 @@
     padding:3px;
 }
 
+#SocialIcons > a > img:hover{
+    background-color: #FFFFFF;
+}
+
 #SocialIcons > a:nth-child(2) >img{
     border-radius: 36%;
 }
@@ -91,6 +95,7 @@
 
 #LanguageButtons > button{
     outline: none;
+    cursor: pointer;
 }
 
 .LanguageButton{
