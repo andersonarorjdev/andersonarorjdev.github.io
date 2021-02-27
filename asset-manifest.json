@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.c86dd673.chunk.css",
-    "main.js": "/static/js/main.6f1510b8.chunk.js",
-    "main.js.map": "/static/js/main.6f1510b8.chunk.js.map",
+    "main.css": "/static/css/main.8aea7da9.chunk.css",
+    "main.js": "/static/js/main.7c6b74f9.chunk.js",
+    "main.js.map": "/static/js/main.7c6b74f9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c67d713e.js",
     "runtime-main.js.map": "/static/js/runtime-main.c67d713e.js.map",
     "static/js/2.cac88fbd.chunk.js": "/static/js/2.cac88fbd.chunk.js",
     "static/js/2.cac88fbd.chunk.js.map": "/static/js/2.cac88fbd.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.c86dd673.chunk.css.map": "/static/css/main.c86dd673.chunk.css.map",
+    "static/css/main.8aea7da9.chunk.css.map": "/static/css/main.8aea7da9.chunk.css.map",
     "static/js/2.cac88fbd.chunk.js.LICENSE.txt": "/static/js/2.cac88fbd.chunk.js.LICENSE.txt",
     "static/media/BrazilFlag.a35a27bb.png": "/static/media/BrazilFlag.a35a27bb.png",
     "static/media/Laravel.8b2939ca.png": "/static/media/Laravel.8b2939ca.png",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.c67d713e.js",
     "static/js/2.cac88fbd.chunk.js",
-    "static/css/main.c86dd673.chunk.css",
-    "static/js/main.6f1510b8.chunk.js"
+    "static/css/main.8aea7da9.chunk.css",
+    "static/js/main.7c6b74f9.chunk.js"
   ]
 }
