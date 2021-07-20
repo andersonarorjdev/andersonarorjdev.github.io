@@ -29,15 +29,15 @@ const Projects = props =>{
                 <Main>
                    <ProjectsContainer>
                        {  
-                            Projects.map(project =>(
-                            <Card key={project.id}>
-                                <h1>{project.name}</h1>
-                                <img src={Github} alt="Github" />
-                                <p>{project.description}</p>
-                                <h5>{project.language}</h5>
-                                <a href={project.html_url} target="blank">Acesse o projeto</a>
-                            </Card>
-                            ))
+                        Projects.map(project =>(
+                        <Card key={project.id}>
+                            <h1>{project.name}</h1>
+                            <img src={Github} alt="Github" />
+                            <p>{project.description}</p>
+                            <h5>{project.language}</h5>
+                            <a href={project.html_url} target="blank">Acesse o projeto</a>
+                        </Card>
+                        ))
                        }
                    </ProjectsContainer>
                 </Main>
