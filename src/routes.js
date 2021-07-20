@@ -6,7 +6,10 @@ import Projects from './pages/Projects/Projects';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 
-const Routes = _ =>{
+import UseGaTracker from './useGaTracker';
+
+const Routes = props =>{
+    // UseGaTracker();
 return(
     <BrowserRouter> 
         <Switch>
